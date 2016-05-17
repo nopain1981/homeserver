@@ -1,7 +1,7 @@
 FROM ubuntu:xenial-20160125
 
-ENV sonarr_release=develop
-# ENV sonarr_release=master
+#ENV sonarr_release=develop
+ENV sonarr_release=master
 
 
 ENV _clean="rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*"
