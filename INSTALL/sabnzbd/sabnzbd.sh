@@ -37,9 +37,19 @@ chown -R ${USER}: $(dirname ${CONFIG})
 echo "[DONE]"
 
 #
-# Finally, start SABNZBD.
+# Because SABnzbd runs in a container we've to make sure we've a proper
+# listener on 0.0.0.0. We also have to deal with the port which by default is
+# 8080 but can be changed by the user.
 #
 
-CONFIG=${CONFIG:-/config/sabnzbd.ini}
-echo "Starting Sabnzbd..."
-exec su -pc "/usr/bin/sabnzbdplus --config-file ${CONFIG} --console --server 0.0.0.0:5051" ${USER}
+printf "Get listener port... "
+PORT=$(sed -n '/^port *=/{s/port *= *//p;q}' ${CONFIG})
+LISTENER="-s 0.0.0.0:${PORT:=5051}"
+echo "[${PORT}]"
+
+#
+# Finally, start SABnzbd.
+#
+
+echo "Starting SABnzbd..."
+exec su -pc "./SABnzbd.py -b 0 -f ${CONFIG} ${LISTENER}" ${USER}
