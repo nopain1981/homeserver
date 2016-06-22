@@ -1,7 +1,7 @@
 FROM ubuntu:xenial-20160125
 
 # Choose from: master, unstable, testing, or stable
-ENV tvh_release=unstable
+ENV tvh_release=master
 
 
 ENV _clean="rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*"
