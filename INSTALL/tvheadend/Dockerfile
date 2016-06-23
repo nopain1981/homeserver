@@ -1,4 +1,4 @@
-FROM ubuntu:xenial-20160125
+FROM ubuntu:trusty-20160526
 
 # Choose from: master, unstable, testing, or stable
 ENV tvh_release=master
@@ -23,8 +23,8 @@ RUN tar -zxf /tmp/pipework-master.tar.gz -C /tmp && cp /tmp/pipework-master/pipe
 
 # Install xmltv & tvheadend
 RUN apt-get update -qq && apt-get install -qqy apt-transport-https apt-utils
-RUN apt-get install -qqy ffmpeg \
- && apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 379CE192D401AB61 DB87EE44DD382349 \
+#RUN apt-get install -qqy ffmpeg \
+RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 379CE192D401AB61 DB87EE44DD382349 \
  && echo deb https://dl.bintray.com/dreamcat4/ubuntu ${tvh_release} main > /etc/apt/sources.list.d/tvheadend.list \
  && echo deb http://ppa.launchpad.net/alex-tomlins/xmltv/ubuntu trusty main > /etc/apt/sources.list.d/xmltv.list
 RUN apt-get update -qq && apt-get install -qqy bzip2 libavahi-client3 xmltv
