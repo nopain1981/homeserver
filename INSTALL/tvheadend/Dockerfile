@@ -29,8 +29,8 @@ RUN apt-get update -qq && apt-get install -qqy apt-transport-https apt-utils \
  && echo deb http://ppa.launchpad.net/alex-tomlins/xmltv/ubuntu trusty main > /etc/apt/sources.list.d/xmltv.list \
  && apt-get update -qq && apt-get install -qqy bzip2 libavahi-client3 xmltv \
  && apt-get update -qq && DEBIAN_FRONTEND=noninteractive apt-get install -qqy tvheadend \
- && rm -rf /home/hts && $_apt_clean \
- && apt-get -y autoremove \
+ && rm -rf /home/hts && $_apt_clean
+RUN apt-get -y autoremove \
  && apt-get -y clean \
  && rm -rf /var/lib/apt/lists/* \
  && rm -rf /tmp/* 
