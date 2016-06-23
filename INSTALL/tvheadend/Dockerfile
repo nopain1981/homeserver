@@ -18,7 +18,7 @@ ADD https://github.com/jpetazzo/pipework/archive/master.tar.gz /tmp/pipework-mas
 RUN tar -zxf /tmp/pipework-master.tar.gz -C /tmp && cp /tmp/pipework-master/pipework /sbin/ && $_clean
 
 # Install xmltv & tvheadend
-RUN apt-get update -qq && apt-get install -qqy apt-transport-https \
+RUN apt-get update -qq && apt-get install -qqy apt-transport-https ffmpeg \
  && apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 379CE192D401AB61 \
  && echo deb https://dl.bintray.com/dreamcat4/ubuntu ${tvh_release} main > /etc/apt/sources.list.d/tvheadend.list \
  && apt-get update -qq && apt-get install -qqy bzip2 libavahi-client3 xmltv \
@@ -62,4 +62,4 @@ RUN chmod +x /entrypoint.sh
 # Default container settings
 VOLUME /config /recordings
 EXPOSE 9981 9982 65001 5002 5004 5000
-ENTRYPOINT ["/init","/entrypoint.sh","-u","swuser","-g","swuser","-c","/config"]
+ENTRYPOINT ["/init","/entrypoint.sh","-u","swuser","-g","swuser","--noacl","-c","/config"]
