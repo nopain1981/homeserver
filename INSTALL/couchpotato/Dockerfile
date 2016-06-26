@@ -27,8 +27,8 @@ RUN export VERSION=3.0.1 \
     && git clone -b develop https://github.com/CouchPotato/CouchPotatoServer.git /tmp/CouchPotatoServer \
     && mv /tmp/CouchPotatoServer* couchpotato \
     && chown -R swuser: couchpotato \
-    && pip install `pip freeze -l | cut --fields=1 -d = -` --upgrade \
-    && apt-get -y remove curl python-dev libz-dev libxml2-dev libxslt1-dev gcc \
+    && pip install `pip freeze -l | cut --fields=1 -d = -` --upgrade
+RUN apt-get -y remove curl python-dev libz-dev libxml2-dev libxslt1-dev gcc \
     && apt-get -y autoremove \
     && apt-get -y clean \
     && rm -rf /var/lib/apt/lists/* \
