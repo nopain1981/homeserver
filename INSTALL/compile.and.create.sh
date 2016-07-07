@@ -67,6 +67,8 @@ $DOCPATH run -d --net="host" --name=$dname \
 -v $primary/$dname/$dtmp:/tmp \
 -v $dockerfs/INCOMING:/INCOMING \
 -v $dockerfs/COMPLETE:/COMPLETE \
+--device=/dev/ttyUSB0:/dev/ttyUSB0 \
+--device=/dev/ttyUSB1:/dev/ttyUSB1 \
 -p $dport \
 -v /etc/localtime:/etc/localtime:ro \
 $dname
