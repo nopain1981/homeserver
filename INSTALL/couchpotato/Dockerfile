@@ -21,13 +21,18 @@ RUN chmod 755 /couchpotato.sh
 
 RUN export VERSION=3.0.1 \
     && apt-get -q update \
-    && apt-get install -qy curl ca-certificates python-pip python-dev libz-dev libxml2-dev libxslt1-dev gcc python3-lxml git subversion libffi-dev \
+    && apt-get install -qy libssl-dev curl ca-certificates python-pip python-dev libz-dev libxml2-dev libxslt1-dev gcc python3-lxml git subversion libffi-dev \
 #    && curl -o /tmp/couchpotato.tar.gz https://codeload.github.com/CouchPotato/CouchPotatoServer/tar.gz/build/${VERSION} \
 #    && tar xzf /tmp/couchpotato.tar.gz \
     && git clone -b develop https://github.com/CouchPotato/CouchPotatoServer.git /tmp/CouchPotatoServer \
     && mv /tmp/CouchPotatoServer* couchpotato \
-    && chown -R swuser: couchpotato \
-    && pip install `pip freeze -l | cut --fields=1 -d = -` --upgrade
+    && chown -R swuser: couchpotato 
+#\
+#    && pip install `pip freeze -l | cut --fields=1 -d = -` --upgrade
+# 07072016 - pip / cffi / ssl / lxml
+RUN pip install --upgrade pip cffi 
+RUN pip install pyopenssl --upgrade
+RUN pip install lxml
 RUN apt-get -y remove curl python-dev libz-dev libxml2-dev libxslt1-dev gcc \
     && apt-get -y autoremove \
     && apt-get -y clean \
