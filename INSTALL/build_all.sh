@@ -5,5 +5,4 @@
 ./compile.and.create.sh sabnzbd 5051:5051
 ./compile.and.create.sh sonarr 8989:8989
 ./compile.and.create.sh tvheadend 9981:9981
-
-
+./compile.and.create.sh batchrename 8080:8080

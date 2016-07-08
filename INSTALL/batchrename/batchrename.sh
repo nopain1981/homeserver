@@ -42,5 +42,5 @@ echo "[DONE]"
 
 CONFIG=${CONFIG:-/config/config.ini}
 echo "Starting Batchrename..."
-exec su -pc "/opt/batchconv/batch-h264-converter /storage/data/Library/Movies/" ${USER}
+exec su -pc "/opt/batchconv/batch-h264-converter /storage/data/Library/Movies >> /tmp/batchconv.log" ${USER}
 
