@@ -6,3 +6,4 @@
 ./compile.and.create.sh sonarr 8989:8989
 ./compile.and.create.sh tvheadend 9981:9981
 ./compile.and.create.sh batchrename 8080:8080
+./compile.and.create.sh batchrename 6789:6789
