@@ -19,7 +19,7 @@ RUN export SABNZBD_VERSION=1.1.0RC1 PAR2CMDLINE_VERSION=v0.6.14 \
     && sed -i "s/ main$/ main contrib non-free/" /etc/apt/sources.list \
     && apt-get -q update 
 RUN apt-get install -qy curl ca-certificates python-cheetah python-openssl python-yenc unzip unrar p7zip-full build-essential automake tar
-RUN curl -o /tmp/sabnzbd.tar.gz https://codeload.github.com/sabnzbd/sabnzbd/tar.gz/${SABNZBD_VERSION} \
+RUN curl -o /tmp/sabnzbd.tar.gz https://codeload.github.com/sabnzbd/sabnzbd/tar.gz/1.1.0RC1 \
     && tar xzf /tmp/sabnzbd.tar.gz \
     && mv sabnzbd-* sabnzbd \
     && chown -R swuser:swuser /tmp/sabnzbd* 
