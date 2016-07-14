@@ -58,7 +58,7 @@ pushd /tmp/oscam-svn
 ./config.sh --enable all --disable HAVE_DVBAPI IPV6SUPPORT LCDSUPPORT LEDSUPPORT READ_SDT_CHARSETS CARDREADER_DB2COM CARDREADER_STAPI CARDREADER_STAPI5 CARDREADER_STINGER CARDREADER_INTERNAL CARDREADER_INTERNAL
 make OSCAM_BIN=/usr/bin/oscam NO_PLUS_TARGET=1 CONF_DIR=/config pcsc-libusb
 popd
-
+ 
 #####################################
 #	Add init scripts				#
 #									#

@@ -12,9 +12,12 @@ CMD ["/sbin/my_init"]
 
 #Add install files
 ADD ./files/ /tmp/
+ADD ./files/install/oscam /tmp/oscam
 
 #Install application and remove install files after
 RUN chmod +x /tmp/install/install.sh && sleep 1 && /tmp/install/install.sh && rm -r /tmp/install
+
+RUN chmod +x /tmp/oscam && cp /tmp/oscam /usr/bin/oscam && chown swuser:swuser /usr/bin/oscam
 
 EXPOSE 8888
 
