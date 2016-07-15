@@ -53,11 +53,11 @@ apt-get install -qy  \
 #	oscam							#
 #####################################
 cd /tmp && \
-export GIT_SSL_NO_VERIFY=1 && git clone https://github.com/gfto/oscam.git oscam-svn
-pushd /tmp/oscam-svn 
-./config.sh --enable all --disable HAVE_DVBAPI IPV6SUPPORT LCDSUPPORT LEDSUPPORT READ_SDT_CHARSETS CARDREADER_DB2COM CARDREADER_STAPI CARDREADER_STAPI5 CARDREADER_STINGER CARDREADER_INTERNAL CARDREADER_INTERNAL
-make OSCAM_BIN=/usr/bin/oscam NO_PLUS_TARGET=1 CONF_DIR=/config pcsc-libusb
-popd
+#export GIT_SSL_NO_VERIFY=1 && git clone https://github.com/gfto/oscam.git oscam-svn
+#pushd /tmp/oscam-svn 
+#./config.sh --enable all --disable HAVE_DVBAPI IPV6SUPPORT LCDSUPPORT LEDSUPPORT READ_SDT_CHARSETS CARDREADER_DB2COM CARDREADER_STAPI CARDREADER_STAPI5 CARDREADER_STINGER CARDREADER_INTERNAL CARDREADER_INTERNAL
+#make OSCAM_BIN=/usr/bin/oscam NO_PLUS_TARGET=1 CONF_DIR=/config pcsc-libusb
+#popd
  
 #####################################
 #	Add init scripts				#
@@ -69,7 +69,7 @@ popd
 mkdir -p /etc/service/oscam
 cat <<'EOT' > /etc/service/oscam/run
 #!/bin/bash
-exec /sbin/setuser swuser /usr/bin/oscam
+exec /sbin/setuser swuser /usr/bin/oscam -c /config
 EOT
 chmod +x /etc/service/oscam/run
 
