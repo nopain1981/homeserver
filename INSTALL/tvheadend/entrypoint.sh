@@ -34,4 +34,4 @@ _tvheadend_args="$@"
 
 
 # Start tvheadend
-/usr/bin/tvheadend $_tvheadend_args
+/usr/local/bin/tvheadend $_tvheadend_args

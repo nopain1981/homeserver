@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 
 # Choose from: master, unstable, testing, or stable
-ENV tvh_release=stable
+ENV HTS_COMMIT master
 
 ENV _clean="rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*"
 ENV _apt_clean="eval apt-get clean && $_clean"
@@ -19,11 +19,18 @@ RUN tar -zxf /tmp/pipework-master.tar.gz -C /tmp && cp /tmp/pipework-master/pipe
 
 # Install xmltv & tvheadend
 RUN apt-get update -qq && apt-get install -qqy apt-transport-https ffmpeg \
- && apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 379CE192D401AB61 \
- && echo deb https://dl.bintray.com/dreamcat4/ubuntu ${tvh_release} main > /etc/apt/sources.list.d/tvheadend.list \
  && apt-get update -qq && apt-get install -qqy bzip2 libavahi-client3 xmltv \
- && apt-get update -qq && DEBIAN_FRONTEND=noninteractive apt-get install -qqy udev tvheadend \
+ && apt-get update -qq && DEBIAN_FRONTEND=noninteractive apt-get install -qqy udev \
+    wget git curl make dkms dpkg-dev \
+    debconf-utils software-properties-common \
+    build-essential hdhomerun-config libhdhomerun-dev debhelper libswscale-dev \
+    libavahi-client-dev libavformat-dev libavcodec-dev liburiparser-dev \
+    libssl-dev libiconv-hook1 libiconv-hook-dev cmake \
  && rm -rf /home/hts && $_apt_clean
+
+RUN git clone https://github.com/tvheadend/tvheadend.git /srv/tvheadend \
+  && cd /srv/tvheadend && git checkout ${HTS_COMMIT} && ./configure --libffmpeg_static && make && make install
+
 
 # Relocate the timezone file
 RUN mkdir -p /config/.etc && mv /etc/timezone /config/.etc/ && ln -s /config/.etc/timezone /etc/
