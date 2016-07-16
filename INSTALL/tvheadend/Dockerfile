@@ -21,7 +21,7 @@ RUN tar -zxf /tmp/pipework-master.tar.gz -C /tmp && cp /tmp/pipework-master/pipe
 RUN apt-get update -qq && apt-get install -qqy apt-transport-https ffmpeg \
  && apt-get update -qq && apt-get install -qqy bzip2 libavahi-client3 xmltv \
  && apt-get update -qq && DEBIAN_FRONTEND=noninteractive apt-get install -qqy udev \
-    wget git curl make dkms dpkg-dev \
+    wget git curl make dkms dpkg-dev python \
     debconf-utils software-properties-common \
     build-essential hdhomerun-config libhdhomerun-dev debhelper libswscale-dev \
     libavahi-client-dev libavformat-dev libavcodec-dev liburiparser-dev \
