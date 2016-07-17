@@ -1,30 +1,11 @@
-FROM centos
+FROM ubuntu
+MAINTAINER ryanfox1985 <wolf.fox1985@gmail.com>
 
-WORKDIR /
-# Install strace
-RUN yum -y upgrade && yum -y install strace glibc.i686 libstdc++.i686 ilibgcc.i686 
+COPY CCcam.x86_64 /bin/CCcam
+RUN chmod +x /bin/CCcam
 
-# Bundle keys directory
-COPY /var/ /opt/cccam/var/
-RUN ln -s /opt/cccam/var/keys/ /var/keys
-
-# copy etc and make all links
-COPY /etc/ /opt/cccam/etc/
-RUN cd /opt/cccam/etc && for i in *; do ln -fs /opt/cccam/etc/$i /etc/$i; done
-
-# copy cccam binaries
-COPY /bin/CC* /bin/
-RUN chmod a+x /bin/CCcam*
-
-# link the keys into the USR directory
-RUN ln -s /var/keys/ /usr/keys
-
-# run sanity checks
-RUN ls -liah /bin/CCcam* /etc/CCcam.* /var/keys /usr/keys
-
-EXPOSE 8888
 EXPOSE 12000
-VOLUME /opt/cccam
+EXPOSE 16000
+EXPOSE 16001
 
-CMD [ "/bin/CCcam", "-d", "-c", "/etc/CCcam.cfg" ]
-
+ENTRYPOINT ["/bin/CCcam", "-d", "-C", "/config/CCcam/config/CCcam.cfg"]
