@@ -49,7 +49,7 @@ echo "... now lets build ..."
 $DOCPATH build --rm -t $dname .
 
 if [[ $BUILDER = 'Maik' ]]; then
-$DOCPATH run -d --net="host" --name=$dname \
+$DOCPATH run -d --net="host" --name=$dname --device=/dev/dvb/ \
 -v $dstorage/STORAGE:$dstorage \
 -v $primary/$dname/$dconfig:/config \
 -v $primary/$dname/$dtmp:/tmp \
