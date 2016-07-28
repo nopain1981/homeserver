@@ -6,12 +6,15 @@
 # 3) recreate the image and build container
 #
 #------------------------------------------
-# lets start with couchpotato
-for cc in `docker ps -a | awk {'print $2'} | grep -v ID`;
-do
-docker kill $cc && docker rm $cc
-docker rmi -f $cc
-done
+# check if any docker exists > 
+cc=`docker ps -a | grep -v 'CONTAINER\|_config\|_data\|_run' | wc -l`
+# kill and rm all containers
+if [ $cc != 0 ]; then
+docker ps -a | grep -v 'CONTAINER\|_config\|_data\|_run' | cut -c-12 | xargs docker kill
+docker ps -a | grep -v 'CONTAINER\|_config\|_data\|_run' | cut -c-12 | xargs docker rm
+# rmi all docker images 
+docker images | grep '<none>' | grep -P '[1234567890abcdef]{12}' -o | xargs -L1 docker rmi
+fi
 ./compile.and.create.sh couchpotato 5050:5050
 ./compile.and.create.sh headphones 5053:5053
 ./compile.and.create.sh oscam 16999:16999
