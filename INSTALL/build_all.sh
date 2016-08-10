@@ -25,3 +25,4 @@ fi
 #./compile.and.create.sh batchrename 8080:8080
 #./compile.and.create.sh batchrename 6789:6789
 ./compile.and.create.sh noip 1234:1234
+./compile.and.create.sh plexpy 8181:8181
