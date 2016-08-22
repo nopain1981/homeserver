@@ -69,4 +69,4 @@ RUN chmod +x /entrypoint.sh
 # Default container settings
 VOLUME /config /recordings
 EXPOSE 9981 9982 65001 5002 5004 5000
-ENTRYPOINT ["/init","/entrypoint.sh","-u","swuser","-g","swuser","-c","/config"]
+ENTRYPOINT ["/init","/entrypoint.sh","-u","swuser","-g","swuser","--noacl","-c","/config"]
