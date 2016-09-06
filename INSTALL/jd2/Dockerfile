@@ -1,66 +1,25 @@
-# Builds a docker gui image
-FROM hurricane/dockergui:x11rdp1.3
+FROM java:jre
 
-MAINTAINER aptalca
+MAINTAINER PlusMinus <piddlpiddl@gmail.com>
 
-#########################################
-##        ENVIRONMENTAL CONFIG         ##
-#########################################
-
-# Set environment variables
-
-# User/Group Id gui app will be executed as default are 99 and 100
-ENV USER_ID=50000
-ENV GROUP_ID=50000
-
+# Setup sonarr /config dir and /media folder
 RUN groupadd -o -g 50000 swuser \
- && useradd -o -c "Also known as jd2 user - runs jdownloader" \
+ && useradd -o -c "Also known as ijd2 - runs java with jd2" \
     -u 50000 -N -g swuser --shell /bin/sh -d /config swuser \
  && install -o swuser -g swuser -d /config /media
 
-# Gui App Name default is "GUI_APPLICATION"
-ENV APP_NAME="JDownloader2"
-
-# Default resolution, change if you like
-ENV WIDTH=1280
-ENV HEIGHT=720
-
-# Use baseimage-docker's init system
-CMD ["/sbin/my_init"]
-
+# Create directory, downloader JD" and start JD2 for the initial update and creation of config files.
 RUN \
-#########################################
-##    REPOSITORIES AND DEPENDENCIES    ##
-#########################################
-echo 'deb http://archive.ubuntu.com/ubuntu trusty main universe restricted' > /etc/apt/sources.list && \
-echo 'deb http://archive.ubuntu.com/ubuntu trusty-updates main universe restricted' >> /etc/apt/sources.list && \
-mkdir -p /etc/my_init.d && \
-
-# Install packages needed for app
-export DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_FRONTEND=noninteractive && \
-apt-get update && \
-apt-get install -y firefox
+	mkdir /opt/JDownloader/ && \
+	wget -O /opt/JDownloader/JDownloader.jar --user-agent="https://hub.docker.com/r/plusminus/jdownloader2-headless/" --progress=bar:force http://installer.jdownloader.org/JDownloader.jar && \
+	java -Djava.awt.headless=true -jar /opt/JDownloader/JDownloader.jar
 
 
-#########################################
-##          GUI APP INSTALL            ##
-#########################################
+RUN chown -R swuser:swuser /opt/JDownloader/
 
-# Install steps for X app
-
-
-# Copy X app start script to right location
-COPY startapp.sh /startapp.sh
-COPY firstrun.sh /etc/my_init.d/firstrun.sh
-COPY /src/jd2.tar /nobody/jd2.tar
-RUN chmod +x /etc/my_init.d/firstrun.sh 
+COPY startJD2.sh /opt/JDownloader/
+RUN chmod +x /opt/JDownloader/startJD2.sh
 
 
-
-#########################################
-##         EXPORTS AND VOLUMES         ##
-#########################################
-
-# Place whater volumes and ports you want exposed here:
-VOLUME ["/config"]
-EXPOSE 3389 8080 
+# Run this when the container is started
+CMD /opt/JDownloader/startJD2.sh
