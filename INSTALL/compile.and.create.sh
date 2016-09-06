@@ -68,7 +68,6 @@ $DOCPATH run -d --net="host" --name=$dname \
 -v $dockerfs/INCOMING:/INCOMING \
 -v $dockerfs/COMPLETE:/COMPLETE \
 -p $dport \
--v /etc/localtime:/etc/localtime:ro \
 $dname
 fi
 

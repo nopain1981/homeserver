@@ -7,7 +7,7 @@
 
 
 # Set folder permissions
-chown -R swuser:swuser/opt/NzbDrone /config
+chown -R swuser:swuser /opt/NzbDrone /config
 
 # chown -r the /media folder only if owned by root. We asume that means it's a docker volume
 [ "$(stat -c %u:%g /media)" = "0:0" ] && chown swuser:swuser /media
