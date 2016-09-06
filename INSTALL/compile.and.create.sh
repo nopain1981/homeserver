@@ -55,8 +55,6 @@ $DOCPATH run -d --net="host" --name=$dname \
 -v $primary/$dname/$dtmp:/tmp \
 -v $dockerfs/INCOMING:/INCOMING \
 -v $dockerfs/COMPLETE:/COMPLETE \
--v /dev/dvb:/dev/dvb
---device=/dev/dvb
 -p $dport \
 -v /etc/localtime:/etc/localtime:ro \
 $dname
