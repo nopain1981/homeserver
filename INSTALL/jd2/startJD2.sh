@@ -26,7 +26,7 @@ echo
 # Set folder permissions
 chown -R swuser:swuser /opt/JDownloader /config
 
-mv /opt/JDownloader/cfg /config/
+#mv /opt/JDownloader/cfg /config/
 ln -s /config/cfg /opt/JDownloader
 
 trap stopJD2 EXIT
