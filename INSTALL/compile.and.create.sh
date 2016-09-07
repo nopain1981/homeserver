@@ -51,8 +51,8 @@ $DOCPATH build --rm -t $dname .
 if [[ $BUILDER = 'Maik' ]]; then
 $DOCPATH run -d --net="host" --name=$dname \
 -v $dstorage/STORAGE:$dstorage \
--v $primary/$dname/$dconfig:/config \
--v $primary/$dname/$dtmp:/tmp \
+-v $primary/$dname/$dconfig:/$dconfig \
+-v $primary/$dname/$dtmp:/$dtmp \
 -v $dockerfs/INCOMING:/INCOMING \
 -v $dockerfs/COMPLETE:/COMPLETE \
 -p $dport \
@@ -63,8 +63,8 @@ echo "... now create the container ..."
 #-v $dplayground/$DNAME:/$dname \
 $DOCPATH run -d --net="host" --name=$dname \
 -v $dstorage:$dstorage \
--v $primary/$dname/$dconfig:/config \
--v $primary/$dname/$dtmp:/tmp \
+-v $primary/$dname/$dconfig:/$dconfig \
+-v $primary/$dname/$dtmp:/$dtmp \
 -v $dockerfs/INCOMING:/INCOMING \
 -v $dockerfs/COMPLETE:/COMPLETE \
 -p $dport \
