@@ -59,6 +59,17 @@ $DOCPATH run -d --net="host" --name=$dname \
 -v /etc/localtime:/etc/localtime:ro \
 $dname
 else
+if [[ $dname = 'ark' ]]; then
+echo "lets create ark docker container"
+$DOCPATH run -d --net="host" --name=$dname \
+-e SESSIONNAME=$dname \
+-e ADMINPASSWORD="arkadmin" \
+-e AUTOUPDATE=120 \
+-e AUTOBACKUP=60 \
+-e WARNMINUTE=30 \
+-v $primary/$dname/$dconfig:/$dname \
+$dname
+else
 echo "... now create the container ..."
 #-v $dplayground/$DNAME:/$dname \
 $DOCPATH run -d --net="host" --name=$dname \
@@ -69,6 +80,7 @@ $DOCPATH run -d --net="host" --name=$dname \
 -v $dockerfs/COMPLETE:/COMPLETE \
 -p $dport \
 $dname
+fi
 fi
 
 $DOCPATH ps
