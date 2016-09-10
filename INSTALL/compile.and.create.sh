@@ -49,6 +49,17 @@ echo "... now lets build ..."
 $DOCPATH build --rm -t $dname .
 
 if [[ $BUILDER = 'Maik' ]]; then
+if [[ $dname = 'ark' ]]; then
+echo "lets create ark docker container"
+$DOCPATH run -d --net="host" --name=$dname \
+-e SESSIONNAME=$dname \
+-e ADMINPASSWORD="arkadmin" \
+-e AUTOUPDATE=120 \
+-e AUTOBACKUP=60 \
+-e WARNMINUTE=30 \
+-v $primary/$dname/$dconfig:/$dname \
+$dname
+else
 $DOCPATH run -d --net="host" --name=$dname \
 -v $dstorage/STORAGE:$dstorage \
 -v $primary/$dname/$dconfig:/config \
@@ -58,6 +69,7 @@ $DOCPATH run -d --net="host" --name=$dname \
 -p $dport \
 -v /etc/localtime:/etc/localtime:ro \
 $dname
+fi
 else
 if [[ $dname = 'ark' ]]; then
 echo "lets create ark docker container"
