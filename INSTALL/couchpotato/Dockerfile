@@ -30,8 +30,9 @@ RUN export VERSION=3.0.1 \
 #\
 #    && pip install `pip freeze -l | cut --fields=1 -d = -` --upgrade
 # 07072016 - pip / cffi / ssl / lxml
+RUN pip install -U pip
 RUN pip install --upgrade pip cffi 
-RUN pip install pyopenssl --upgrade
+#RUN pip install pyopenssl --upgrade
 RUN pip install lxml
 RUN apt-get -y remove curl python-dev libz-dev libxml2-dev libxslt1-dev gcc \
     && apt-get -y autoremove \
