@@ -21,10 +21,9 @@ RUN chmod 755 /sickbeard.sh
 
 RUN export VERSION=master \
     && apt-get -q update \
-    && apt-get install -qy curl ca-certificates python-cheetah python-openssl \
-    && curl -o /tmp/sickbeard.tar.gz https://codeload.github.com/midgetspy/Sick-Beard/tar.gz/${VERSION} \
-    && tar xzf /tmp/sickbeard.tar.gz \
-    && mv Sick-Beard-* sickbeard \
+    && apt-get install -qy git subversion curl ca-certificates python-cheetah python-openssl \
+    && git clone https://github.com/cytec/Sick-Beard.git \
+    && mv Sick-Beard sickbeard \
     && chown -R swuser: sickbeard \
     && apt-get -y remove curl \
     && apt-get -y autoremove \
