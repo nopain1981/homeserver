@@ -33,6 +33,7 @@ RUN export VERSION=3.0.1 \
 # 07072016 - pip / cffi / ssl / lxml
 RUN pip install -U pip
 RUN pip install cffi lxml pyopenssl 
+RUN pip install pyopenssl --upgrade
 RUN apt-get -y remove curl python-dev libz-dev libxml2-dev libxslt1-dev gcc \
     && apt-get -y autoremove \
     && apt-get -y clean \
