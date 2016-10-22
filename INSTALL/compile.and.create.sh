@@ -93,8 +93,8 @@ $DOCPATH run -d --net="host" --name=$dname \
 -p $dport \
 $dname
 fi
-$DOCPATH tag $DNAME nopain1981/$DNAME
-$DOCPATH push nopain1981/$DNAME
+$DOCPATH tag $dname nopain1981/$dname
+$DOCPATH push nopain1981/$dname
 fi
 
 $DOCPATH ps
