@@ -26,6 +26,7 @@ docker images | awk {'print $3'} | xargs docker rmi -f
 ./compile.and.create.sh noip 1234:1234
 ./compile.and.create.sh oscam 1337:1337
 ./compile.and.create.sh plex 32400:32400
+./compile.and.create.sh plexpy 8181:8181
 ./compile.and.create.sh sabnzbd 5051:5051
 #./compile.and.create.sh sickbeard 5055:5055
 ./compile.and.create.sh sickrage 5055:5055
