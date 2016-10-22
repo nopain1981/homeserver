@@ -15,7 +15,7 @@
   <Support></Support>
   <Registry>https://registry.hub.docker.com/u/nopain1981/tvheadend/</Registry>
   <GitHub>https://github.com/nopain1981/homeserver/tree/master/INSTALL/tvheadend</GitHub>
-  <Repository>nopain1981/homeserver/INSTALL/tvheadend</Repository>
+  <Repository>nopain1981/tvheadend</Repository>
   <Project>https://tvheadend.org/</Project>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
