@@ -49,38 +49,39 @@ echo "... now lets build ..."
 $DOCPATH build --rm -t $dname .
 
 if [[ $BUILDER = 'Maik' ]]; then
-if [[ $dname = 'ark' ]]; then
-echo "lets create ark docker container"
-$DOCPATH run -d --privileged=true --net="host" --name=$dname \
--e SESSIONNAME=$dname \
--e ADMINPASSWORD="arkadmin" \
--e AUTOUPDATE=120 \
--e AUTOBACKUP=60 \
--e WARNMINUTE=30 \
--v $primary/$dname/$dconfig:/$dname \
--p $dport
-$dname
-elif
-echo "lets create plexbeta docker container"
-$DOCPATH run -d --privileged=true --name=$dname \
--e SESSIONNAME=$dname \
--e ADMINPASSWORD="arkadmin" \
--e AUTOUPDATE=120 \
--e AUTOBACKUP=60 \
--e WARNMINUTE=30 \
--v $primary/$dname/$dconfig:/$dname \
-$dname
-elif
-$DOCPATH run -d --privileged=true --net="host" --name=$dname \
--v $dstorage/STORAGE:$dstorage \
--v $primary/$dname/$dconfig:/config \
--v $primary/$dname/$dtmp:/tmp \
--v $dockerfs/INCOMING:/INCOMING \
--v $dockerfs/COMPLETE:/COMPLETE \
--p $dport \
--v /etc/localtime:/etc/localtime:ro \
-$dname
-fi
+
+	if [[ $dname = 'ark' ]]; then
+		echo "lets create ark docker container"
+		$DOCPATH run -d --privileged=true --net="host" --name=$dname \
+		-e SESSIONNAME=$dname \
+		-e ADMINPASSWORD="arkadmin" \
+		-e AUTOUPDATE=120 \
+		-e AUTOBACKUP=60 \
+		-e WARNMINUTE=30 \
+		-v $primary/$dname/$dconfig:/$dname \
+		-p $dport
+		$dname
+	elif [[ $dname = 'plexbeta' ]]; then
+		echo "lets create plexbeta docker container"
+		$DOCPATH run -d --privileged=true --name=$dname \
+		-e SESSIONNAME=$dname \
+		-e ADMINPASSWORD="arkadmin" \
+		-e AUTOUPDATE=120 \
+		-e AUTOBACKUP=60 \
+		-e WARNMINUTE=30 \
+		-v $primary/$dname/$dconfig:/$dname \
+		$dname
+	else
+		$DOCPATH run -d --privileged=true --net="host" --name=$dname \
+		-v $dstorage/STORAGE:$dstorage \
+		-v $primary/$dname/$dconfig:/config \
+		-v $primary/$dname/$dtmp:/tmp \
+		-v $dockerfs/INCOMING:/INCOMING \
+		-v $dockerfs/COMPLETE:/COMPLETE \
+		-p $dport \
+		-v /etc/localtime:/etc/localtime:ro \
+		$dname
+	fi
 else
 if [[ $dname = 'ark' ]]; then
 echo "lets create ark docker container"
