@@ -16,8 +16,10 @@ RUN echo "force-unsafe-io" > /etc/dpkg/dpkg.cfg.d/02apt-speedup &&\
     && \
     echo "deb http://shell.ninthgate.se/packages/debian plexpass main" > /etc/apt/sources.list.d/plexmediaserver.list && \
     curl http://shell.ninthgate.se/packages/shell.ninthgate.se.gpg.key | apt-key add - && \
-    apt-get -q update && \
-    apt-get install -qy	plexmediaserver_1.2.3.2914-1ff0f18 && \
+apt-get -q update && \
+    curl http://shell.ninthgate.se/packages/debian/pool/main/p/plexmediaserver/plexmediaserver_1.2.3.2914-1ff0f18-debian_amd64.deb -o /tmp/plex.deb && \
+   apt-get -qy install avahi-daemon avahi-utils && \
+    dpkg -i /tmp/plex.deb && \
     apt-get -y autoremove && \
     apt-get -y clean && \
     rm -rf /var/lib/apt/lists/* && \
