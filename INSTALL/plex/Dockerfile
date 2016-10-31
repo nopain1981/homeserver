@@ -19,6 +19,7 @@ RUN echo "force-unsafe-io" > /etc/dpkg/dpkg.cfg.d/02apt-speedup &&\
     #apt-get install -qy plexmediaserver && \
     curl https://downloads.plex.tv/plex-media-server/1.2.3.2914-1ff0f18/plexmediaserver_1.2.3.2914-1ff0f18_amd64.deb -o /tmp/plex.deb && \ 
     dpkg -i /tmp/plex.deb && \
+    cat /etc/passwd && \
     apt-get -y autoremove && \
     apt-get -y clean && \
     rm -rf /var/lib/apt/lists/* && \
