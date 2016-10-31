@@ -70,7 +70,7 @@ $DOCPATH run -d --privileged=true --name=$dname \
 -e WARNMINUTE=30 \
 -v $primary/$dname/$dconfig:/$dname \
 $dname
-else
+elif
 $DOCPATH run -d --privileged=true --net="host" --name=$dname \
 -v $dstorage/STORAGE:$dstorage \
 -v $primary/$dname/$dconfig:/config \
