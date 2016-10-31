@@ -35,6 +35,7 @@ EXPOSE 32400
 
 ADD ./Preferences.xml /Preferences.xml
 
+RUN ls -l /
 ADD ./start.sh /start.sh
 RUN chmod +x /start.sh
 

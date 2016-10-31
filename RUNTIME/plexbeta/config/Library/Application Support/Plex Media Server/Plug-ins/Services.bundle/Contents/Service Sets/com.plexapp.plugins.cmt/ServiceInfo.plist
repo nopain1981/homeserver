@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>URL</key>
+	<dict>
+		<key>CMT</key>
+		<dict>
+			<key>URLPatterns</key>
+			<array>
+				<string>^http:\/\/www\.cmt\.com\/shows\/.+\/\d{5,7}\/(playlist|video)\/(#id=\d{7})?</string>
+				<string>^http:\/\/www\.cmt\.com\/videos\/.+\/\d{5,7}\/playlist.jhtml(#id=\d{7})?</string>
+				<string>^http:\/\/www\.cmt\.com\/videos\/misc\/\d{5,7}\/.+jhtml(#id=\d{7})?</string>
+				<string>^http:\/\/www\.cmt\.com\/videos?\/\?v?id=\d{4,7}</string>
+				<string>^http:\/\/www\.cmt\.com\/videos\/.+\/\d{5,7}\/.+jhtml(#id=\d{7})?</string>
+			</array>
+		</dict>
+	</dict>
+</dict>
+</plist>

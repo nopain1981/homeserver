@@ -1,0 +1,162 @@
+TOKEN_URL = 'http://ida.omroep.nl/npoplayer/i.js'
+STREAM_URL = 'http://ida.omroep.nl/odi/?prid=%s&puboptions=adaptive&adaptive=yes&part=1&token=%s'
+RE_TOKEN = Regex('token = "([^"]+)"')
+
+HTTP_HEADERS = {
+	'User-Agent': 'Mozilla/5.0 (iPad; CPU OS 6_0_1 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A523 Safari/8536.25',
+	'Cookie': 'npo_cc=30'
+}
+
+# Xpath queries for metadata
+XPATH_TITLE = [
+	'//meta[@name="og:title"]/@content',
+	'//div[contains(@itemtype, "TVEpisode") or contains(@itemtype, "VideoObject")]//span[@itemprop="name"]/text()',
+	'//div[contains(@itemtype, "TVEpisode") or contains(@itemtype, "VideoObject")]//meta[@itemprop="name"]/@content'
+]
+
+XPATH_SUMMARY = [
+	'//meta[@name="og:description"]/@content',
+	'//div[contains(@itemtype, "TVEpisode") or contains(@itemtype, "VideoObject")]//span[@itemprop="description"]/text()',
+	'//div[contains(@itemtype, "TVEpisode") or contains(@itemtype, "VideoObject")]//meta[@itemprop="description"]/@content'
+]
+
+XPATH_THUMB = [
+	'//meta[@name="og:image"]/@content',
+	'//img[@class="background-image"]/@src'
+]
+
+XPATH_RELEASE_DATE = [
+	'//meta[@name="og:video:release_date"]/@content',
+	'//div[contains(@itemtype, "TVEpisode")]//span[@itemprop="startDate"]/text()'
+]
+
+####################################################################################################
+def NormalizeURL(url):
+
+	return url.split('#')[0].split('?')[0]
+
+####################################################################################################
+def MetadataObjectForURL(url):
+
+	try:
+		html = HTML.ElementFromURL(url, headers=HTTP_HEADERS, cacheTime=CACHE_1WEEK)
+	except Ex.HTTPError, e:
+		raise Ex.MediaNotAvailable
+
+	player_id = GetPlayerId(url)
+
+	if not player_id:
+		raise Ex.MediaNotAvailable
+
+	title = html.xpath('|'.join(XPATH_TITLE))[0]
+	summary = html.xpath('|'.join(XPATH_SUMMARY))[0]
+
+	if summary.startswith('Geen omschrijving'):
+		summary = None
+
+	try:
+		thumb = html.xpath('|'.join(XPATH_THUMB))[0].split('?')[0].replace('.png', '.jpg')
+	except:
+		thumb = ''
+
+	try:
+		release_date = html.xpath('|'.join(XPATH_RELEASE_DATE))[0].split(' ')[0]
+		originally_available_at = Datetime.ParseDate(release_date).date()
+	except:
+		originally_available_at = None
+
+	try:
+		duration = html.xpath('//meta[@name="og:video:duration"]/@content')[0]
+		duration = int(duration) * 1000
+	except:
+		duration = None
+
+	return VideoClipObject(
+		title = title,
+		summary = summary,
+		thumb = Resource.ContentsOfURLWithFallback(url=thumb),
+		originally_available_at = originally_available_at,
+		duration = duration
+	)
+
+####################################################################################################
+def MediaObjectsForURL(url):
+
+	return [
+		MediaObject(
+			parts = [
+				PartObject(key=HTTPLiveStreamURL(Callback(PlayVideo, url=url)))
+			],
+			video_resolution = '480',
+			audio_channels = 2,
+			optimized_for_streaming = True
+		)
+	]
+
+####################################################################################################
+@indirect
+def PlayVideo(url, **kwargs):
+
+	player_id = GetPlayerId(url)
+
+	if not player_id:
+		raise Ex.MediaNotAvailable
+
+	token_data = HTTP.Request(TOKEN_URL, headers=HTTP_HEADERS, cacheTime=0).content
+	token = RE_TOKEN.search(token_data)
+
+	if not token:
+		raise Ex.MediaNotAvailable
+	else:
+		token = SwapToken(token.group(1))
+
+	json = JSON.ObjectFromURL(STREAM_URL % (player_id, token), cacheTime=0)
+	stream = '%s?extension=m3u8&type=json' % json['streams'][0].split('?')[0]
+
+	try:
+		json = JSON.ObjectFromURL(stream, cacheTime=0)
+		stream = json['url']
+	except:
+		raise Ex.MediaNotAvailable
+
+	return IndirectResponse(VideoClipObject, key=HTTPLiveStreamURL(stream))
+
+####################################################################################################
+def GetPlayerId(url):
+
+	if 'npo.nl' in url:
+		return url.split('/')[-1]
+
+	return None
+
+####################################################################################################
+# SwapToken function from Retrospect - http://www.rieter.net/content/
+def SwapToken(token):
+
+	first = -1
+	second = -1
+	startAt = 5
+	#Log("Starting Token swap at position in: %s %s %s", token[0:startAt], token[startAt:len(token) - startAt], token[len(token) - startAt:])
+	for i in range(startAt, len(token) - startAt, 1):
+		#Log("Checking %s", token[i])
+		if token[i].isdigit():
+			if first < 0:
+				first = i
+				#Log("Storing first digit at position %s: %s", first, token[i])
+			elif second < 0:
+				second = i
+				#Log("Storing second digit at position %s: %s", second, token[i])
+				break
+
+	# swap them
+	newToken = list(token)
+	if first < 0 or second < 0:
+		#Log("No number combo found in range %s. Swapping middle items", token[startAt:len(token) - startAt])
+		first = 12
+		second = 13
+
+	#Log("Swapping position %s with %s", first, second)
+	newToken[first] = token[second]
+	newToken[second] = token[first]
+	newToken = ''.join(newToken)
+	return newToken

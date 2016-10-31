@@ -1,0 +1,183 @@
+# Variables for Vevo Music videos
+VEVO_URL = 'http://www.vevo.com/watch/%s/%s/%s'
+RE_VEVO_URL_PATH = Regex('http://www\.(?:mtv|vh1)\.com/videos?/([^/]+)/\d+/(.+?)\.jhtml')
+RE_VEVO_ID = Regex("MTVN.VIDEO.isrc = '(.+?)';")
+RE_VEVO = Regex("MTVN.VIDEO.isVevo = (true|false);")
+
+MRSS_URL = 'http://%s/feeds/mrss?uri=%s&isEpisode=true'
+NAMESPACES = {'media': 'http://search.yahoo.com/mrss/'}
+
+####################################################################################################
+def NormalizeURL(url):
+
+    if url.endswith('#id='):
+        url = url.split('#id=')[0]
+
+    return url
+
+####################################################################################################
+def MetadataObjectForURL(url):
+
+    vevo_url = VevoURL(url)
+    if vevo_url:
+        return URLService.MetadataObjectForURL(vevo_url)
+        
+    data = GetRSS(url)
+    title = data.xpath('//channel/title/text()', namespaces=NAMESPACES)[0]
+    summary = data.xpath('//channel/description/text()', namespaces=NAMESPACES)[0]
+    try: thumb = data.xpath('//channel/image/url/text()', namespaces=NAMESPACES)[0]
+    except: thumb = data.xpath('//item/image/@url', namespaces=NAMESPACES)[0]
+    duration = 0
+    media_urls = data.xpath('//media:content[@medium="video"]', namespaces=NAMESPACES)
+
+    for segment in media_urls:
+        if segment.get('duration') != "":
+            if ':' in segment.get('duration'):
+                duration += Datetime.MillisecondsFromString(segment.get('duration'))
+            else:
+                duration += int(float(segment.get('duration'))*1000)
+    try:
+        air_date = data.xpath('//pubDate/text()')[0]
+        originally_available_at = Datetime.ParseDate(air_date)
+    except:
+        originally_available_at = None
+
+    if 'playlist' in url or '/full-episodes/' in url:
+
+        show = data.xpath('//media:category[@scheme="urn:mtvn:display:source"]/text()', namespaces=NAMESPACES)[0]
+        season = data.xpath('//media:category[@scheme="urn:mtvn:seasonN"]/text()', namespaces=NAMESPACES)[0]
+        episode = data.xpath('//media:category[@scheme="urn:mtvn:episodeN"]/text()', namespaces=NAMESPACES)[0]
+        if not season.isdigit():
+            season = '0'
+        if not episode.isdigit():
+            episode = '0'
+
+        return EpisodeObject(
+            show = show,
+            season = int(season),
+            index = int(episode),
+            title = title,
+            summary = summary,
+            duration = duration,
+            thumb = Resource.ContentsOfURLWithFallback(url=thumb),
+            originally_available_at = originally_available_at
+        )
+
+    else:
+
+        return VideoClipObject(
+            title = title,
+            summary = summary,
+            duration = duration,
+            thumb = Resource.ContentsOfURLWithFallback(url=thumb),
+            originally_available_at = originally_available_at
+        )
+
+####################################################################################################
+@deferred
+def MediaObjectsForURL(url):
+
+    # Get vevo url
+    vevo_url = VevoURL(url)
+
+    # this part is only for music videos
+    if vevo_url:
+        return URLService.MediaObjectsForURL(vevo_url)
+
+    # For show videos
+    else:
+        mrss_data = GetRSS(url)
+        media_urls = mrss_data.xpath('//media:content[@medium="video"]/@url', namespaces=NAMESPACES)
+        available_hls_streams = []
+        
+        for media_url in media_urls:
+            # Get HLS Streams
+            try:
+                hls_data = XML.ElementFromURL(media_url.replace('{device}', 'iPad'), cacheTime=CACHE_1HOUR)
+            except:
+                raise Ex.MediaNotAvailable
+
+            # Create part for the video section
+            part = {}
+            part['duration'] = hls_data.xpath('//rendition/@duration')[0]
+            part['hls_url'] = hls_data.xpath('//rendition/src/text()')[0]
+            available_hls_streams.append(part)
+
+        media_objects = []
+        # Build media objects for hls videos
+        parts = []
+        for part in available_hls_streams:
+            parts.append(
+                PartObject(
+                    key = HTTPLiveStreamURL(part['hls_url']),
+                    duration = int(part['duration'])*1000
+                )
+            )
+
+        media_objects.append(
+            MediaObject(
+                parts = parts,
+                protocol = 'hls',
+                container = 'mpegts',
+            )
+        )
+
+    return media_objects
+
+##################################################################################################
+# This is a function to check for Vevo video IDs and build the Vevo url
+def VevoURL(url):
+
+    try:
+        content = HTTP.Request(url).content
+        html = HTML.ElementFromString(content)
+    except:
+        raise Ex.MediaNotAvailable
+
+    # First check to see if it is a Vevo video
+    # (Even if it is not a Vevo video, it will provide an empty Vevo id field)
+    try:
+        vevo = RE_VEVO.search(content).group(1).lower()
+    except:
+        vevo = 'false'
+
+    # If Vevo build a Vevo url
+    if vevo == 'true':
+        id = RE_VEVO_ID.search(content).group(1)
+        local_url = html.xpath('//meta[@property="og:url"]/@content')[0]
+        (artist, title) = RE_VEVO_URL_PATH.search(local_url).groups()
+        vevo_url = VEVO_URL % (artist, title, id)
+    else:
+        vevo_url = None
+
+    #Log(' the value of vevo_url is %s' %vevo_url)
+    return vevo_url
+
+####################################################################################################
+# Get the uri and produce the RSS xml page 
+def GetRSS(url):
+
+    try:
+        content = HTTP.Request(url).content
+        html = HTML.ElementFromString(content)
+    except:
+        raise Ex.MediaNotAvailable
+
+    try: uri = html.xpath('//div[@class="video_player"]/@data-mgid')[0]
+    except: uri = None
+
+    # Check which host to use
+    if uri:
+        host = url.split('//')[1].split('/')[0]
+        try: xml = XML.ElementFromURL(MRSS_URL % (host, uri))
+        except: raise Ex.MediaNotAvailable
+    # Check which feed to use
+    else:
+        Log('there is not mgid')
+        raise Ex.MediaNotAvailable
+
+    if len(xml.xpath('//media:content[@medium="video"]', namespaces=NAMESPACES)) < 1:
+        Log('there is no media in this feed')
+        raise Ex.MediaNotAvailable
+    else:
+        return xml
