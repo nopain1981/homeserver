@@ -58,6 +58,17 @@ $DOCPATH run -d --privileged=true --net="host" --name=$dname \
 -e AUTOBACKUP=60 \
 -e WARNMINUTE=30 \
 -v $primary/$dname/$dconfig:/$dname \
+-p $dport
+$dname
+elif
+echo "lets create plexbeta docker container"
+$DOCPATH run -d --privileged=true --name=$dname \
+-e SESSIONNAME=$dname \
+-e ADMINPASSWORD="arkadmin" \
+-e AUTOUPDATE=120 \
+-e AUTOBACKUP=60 \
+-e WARNMINUTE=30 \
+-v $primary/$dname/$dconfig:/$dname \
 $dname
 else
 $DOCPATH run -d --privileged=true --net="host" --name=$dname \
