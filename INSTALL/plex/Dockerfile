@@ -13,19 +13,18 @@ RUN echo "force-unsafe-io" > /etc/dpkg/dpkg.cfg.d/02apt-speedup &&\
       xmlstarlet \
       curl \
       sudo \
-      wget \
     && \
+    echo "deb http://shell.ninthgate.se/packages/debian plexpass main" > /etc/apt/sources.list.d/plexmediaserver.list && \
+    curl http://shell.ninthgate.se/packages/shell.ninthgate.se.gpg.key | apt-key add - && \
     apt-get -q update && \
-    #apt-get install -qy plexmediaserver && \
-    curl https://downloads.plex.tv/plex-media-server/1.2.3.2914-1ff0f18/plexmediaserver_1.2.3.2914-1ff0f18_amd64.deb -o /tmp/plex.deb && \ 
-    dpkg -i /tmp/plex.deb && \
+    apt-get install -qy plexmediaserver && \
     apt-get -y autoremove && \
     apt-get -y clean && \
     rm -rf /var/lib/apt/lists/* && \
     rm -rf /tmp/*
 VOLUME ["/config","/data"]
-ENV RUN_AS_ROOT="false" \ 
-CHANGE_DIR_RIGHTS="true" \ 
+ENV RUN_AS_ROOT="true" \ 
+CHANGE_DIR_RIGHTS="false" \ 
 CHANGE_CONFIG_DIR_OWNERSHIP="true" \ 
 HOME="/config" \ 
 PLEX_DISABLE_SECURITY=1 
@@ -33,13 +32,9 @@ PLEX_DISABLE_SECURITY=1
 EXPOSE 32400 
 
 ADD ./Preferences.xml /Preferences.xml
-ADD ./plexmediaserver /plexmediaserver
-RUN cp /plexmediaserver /etc/default/plexmediaserver
-RUN set -e PLEX_MEDIA_SERVER_USER="swuser"
-
-RUN chmod -R 777 /config
 
 ADD ./start.sh /start.sh
 RUN chmod +x /start.sh
 
 CMD ["/start.sh"]
+
