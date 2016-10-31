@@ -51,7 +51,7 @@ $DOCPATH build --rm -t $dname .
 if [[ $BUILDER = 'Maik' ]]; then
 if [[ $dname = 'ark' ]]; then
 echo "lets create ark docker container"
-$DOCPATH run -d --net="host" --name=$dname \
+$DOCPATH run -d --privileged=true --net="host" --name=$dname \
 -e SESSIONNAME=$dname \
 -e ADMINPASSWORD="arkadmin" \
 -e AUTOUPDATE=120 \
@@ -60,7 +60,7 @@ $DOCPATH run -d --net="host" --name=$dname \
 -v $primary/$dname/$dconfig:/$dname \
 $dname
 else
-$DOCPATH run -d --net="host" --name=$dname \
+$DOCPATH run -d --privileged=true --net="host" --name=$dname \
 -v $dstorage/STORAGE:$dstorage \
 -v $primary/$dname/$dconfig:/config \
 -v $primary/$dname/$dtmp:/tmp \
@@ -73,7 +73,7 @@ fi
 else
 if [[ $dname = 'ark' ]]; then
 echo "lets create ark docker container"
-$DOCPATH run -d --net="host" --name=$dname \
+$DOCPATH run -d --privileged=true --net="host" --name=$dname \
 -e SESSIONNAME=$dname \
 -e ADMINPASSWORD="arkadmin" \
 -e AUTOUPDATE=120 \
@@ -84,7 +84,7 @@ $dname
 else
 echo "... now create the container ..."
 #-v $dplayground/$DNAME:/$dname \
-$DOCPATH run -d --net="host" --name=$dname \
+$DOCPATH run -d --privileged=true --net="host" --name=$dname \
 -v $dstorage:$dstorage \
 -v $primary/$dname/$dconfig:/config \
 -v $primary/$dname/$dtmp:/tmp \

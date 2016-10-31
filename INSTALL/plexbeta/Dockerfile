@@ -1,42 +1,40 @@
-FROM lsiobase/xenial
-MAINTAINER Stian Larsen, sparklyballs
+FROM ubuntu:16.04 
+MAINTAINER Tim Haak <tim@haak.co> 
+ENV DEBIAN_FRONTEND="noninteractive" \ 
+TERM="xterm" 
+RUN echo "force-unsafe-io" > /etc/dpkg/dpkg.cfg.d/02apt-speedup &&\
+    echo "Acquire::http {No-Cache=True;};" > /etc/apt/apt.conf.d/no-cache && \
+    apt-get -q update && \
+    apt-get -qy dist-upgrade && \
+    apt-get install -qy \
+      iproute2 \
+      ca-certificates \
+      openssl \
+      xmlstarlet \
+      curl \
+      sudo \
+    && \
+    echo "deb http://shell.ninthgate.se/packages/debian plexpass main" > /etc/apt/sources.list.d/plexmediaserver.list && \
+    curl http://shell.ninthgate.se/packages/shell.ninthgate.se.gpg.key | apt-key add - && \
+    apt-get -q update && \
+    apt-get install -qy	plexmediaserver_1.2.3.2914-1ff0f18 && \
+    apt-get -y autoremove && \
+    apt-get -y clean && \
+    rm -rf /var/lib/apt/lists/* && \
+    rm -rf /tmp/*
+VOLUME ["/config","/data"]
+ENV RUN_AS_ROOT="true" \ 
+CHANGE_DIR_RIGHTS="false" \ 
+CHANGE_CONFIG_DIR_OWNERSHIP="true" \ 
+HOME="/config" \ 
+PLEX_DISABLE_SECURITY=1 
 
-# package version
-ENV PLEX_INSTALL="https://plex.tv/downloads/latest/1?channel=8&build=linux-ubuntu-x86_64&distro=ubuntu"
+EXPOSE 32400 
 
-# global environment settings
-ENV DEBIAN_FRONTEND="noninteractive"
-ENV HOME="/config"
-ENV PLEX_DOWNLOAD="https://downloads.plex.tv/plex-media-server"
+ADD ./Preferences.xml /Preferences.xml
 
-RUN groupadd -r -g 50000 swuser \
-&& useradd -r -u 50000 -g 50000 -d /home/swuser swuser
+ADD ./start.sh /start.sh
+RUN chmod +x /start.sh
 
-# install packages
-RUN \
- apt-get update && \
- apt-get install -y \
-	avahi-daemon \
-	dbus \
-	wget && \
+CMD ["/start.sh"]
 
-# install plex
- curl -o \
-	/tmp/plexmediaserver.deb -L \
-	"${PLEX_INSTALL}" && \
- dpkg -i /tmp/plexmediaserver.deb && \
-
-# cleanup
- apt-get clean && \
- rm -rf \
-	/etc/default/plexmediaserver \
-	/tmp/* \
-	/var/lib/apt/lists/* \
-	/var/tmp/*
-
-# add local files
-COPY root/ /
-
-# ports and volumes
-EXPOSE 32400 32400/udp 32469 32469/udp 5353/udp 1900/udp
-VOLUME /config /transcode
