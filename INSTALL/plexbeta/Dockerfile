@@ -31,7 +31,7 @@ CHANGE_CONFIG_DIR_OWNERSHIP="true" \
 HOME="/config" \ 
 PLEX_DISABLE_SECURITY=1 
 
-EXPOSE 32400 
+EXPOSE 33400 
 
 ADD ./Preferences.xml /Preferences.xml
 
