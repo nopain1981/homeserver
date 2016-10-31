@@ -1428,3 +1428,4 @@
 2016-10-31 14:29:48,538 (7f1ed37fe700) :  DEBUG (peerservice:176) - Background-refreshing remote servers
 2016-10-31 14:29:48,538 (7f1ed37fe700) :  DEBUG (peerservice:189) - Updating servers (False/True True/True/True)
 2016-10-31 14:29:48,539 (7f1ed37fe700) :  DEBUG (peerservice:198) - Found 1 servers
+2016-10-31 15:27:48,498 (7f1eb0ff9700) :  DEBUG (runtime:1156) - Starting timed thread named 'invalidation_timer'

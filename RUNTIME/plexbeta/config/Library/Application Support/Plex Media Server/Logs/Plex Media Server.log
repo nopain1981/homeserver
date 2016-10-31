@@ -1561,3 +1561,11 @@ Oct 31, 2016 14:59:13.141 [0x7fdb73bfb700] DEBUG - Stopping file watcher for com
 Oct 31, 2016 14:59:13.327 [0x7fdb733fa700] DEBUG - Stopping file watcher for com.plexapp.agents.plexthememusic
 Oct 31, 2016 14:59:13.809 [0x7fdb72bf9700] DEBUG - Stopping file watcher for com.plexapp.agents.themoviedb
 Oct 31, 2016 14:59:14.212 [0x7fdb723f8700] DEBUG - Stopping file watcher for com.plexapp.agents.thetvdb
+Oct 31, 2016 15:27:45.229 [0x7fdb823ff700] DEBUG - Sync: uploadStatus
+Oct 31, 2016 15:27:48.708 [0x7fdb823ff700] DEBUG - PublicAddressManager: Obtaining public address and mapping port.
+Oct 31, 2016 15:27:48.709 [0x7fdb883fd700] DEBUG - PublicAddressManager: Obtaining public IP.
+Oct 31, 2016 15:27:48.709 [0x7fdb883fd700] DEBUG - HTTP requesting GET http://plex.tv/pms/:/ip
+Oct 31, 2016 15:27:48.843 [0x7fdb883fd700] DEBUG - HTTP 200 response from GET http://plex.tv/pms/:/ip
+Oct 31, 2016 15:27:48.845 [0x7fdb883fd700] DEBUG - PublicAddressManager: Got public IP from http://plex.tv: 178.83.170.186
+Oct 31, 2016 15:28:00.858 [0x7fdb883fd700] DEBUG - NAT: UPnP, getPublicIP didn't find usable IGD.
+Oct 31, 2016 15:28:01.109 [0x7fdb883fd700] WARN - NAT: PMP, got an error: NATPMP_ERR_RECVFROM.
