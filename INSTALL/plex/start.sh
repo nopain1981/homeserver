@@ -12,6 +12,10 @@ CHANGE_CONFIG_DIR_OWNERSHIP=${CHANGE_CONFIG_DIR_OWNERSHIP:-true}
 GROUP=swuser
 mkdir -p /config/logs/supervisor
 
+ls -lR /config
+
+id
+
 touch /supervisord.log
 touch /supervisord.pid
 
@@ -44,7 +48,9 @@ fi
 # Will change all files in directory to be readable by group
 if [ "${CHANGE_DIR_RIGHTS,,}" = "true" ]; then
   chgrp -R "${GROUP}" /data
+  chgrp -R "${GROUP}" /config
   chmod -R g+rX /data
+  chmod -R g+rX /config
 fi
 
 
