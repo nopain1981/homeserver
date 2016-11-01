@@ -390,3 +390,12 @@
 2016-11-01 02:23:14,680 (7f570effd700) :  DEBUG (peerservice:189) - Updating servers (False/True True/True/True)
 2016-11-01 02:23:14,681 (7f570effd700) :  DEBUG (peerservice:198) - Found 1 servers
 2016-11-01 03:21:14,672 (7f570f7fe700) :  DEBUG (runtime:1156) - Starting timed thread named 'invalidation_timer'
+2016-11-01 09:30:30,546 (7f57267fc700) :  DEBUG (runtime:1156) - Starting timed thread named 'auto_update_thread'
+2016-11-01 09:30:30,547 (7f57267fc700) :  INFO (storeservice:356) - Starting automatic update check
+2016-11-01 09:30:30,547 (7f57267fc700) :  DEBUG (runtime:1117) - Created a thread named 'remove_unavailable_agents'
+2016-11-01 09:30:30,594 (7f57267fc700) :  DEBUG (networking:166) - Requesting 'https://plugins.plex.tv/apps/all.json?frameworkVersion=2.6.3&machineIdentifier=3f7d8b45fd54bdb4376458e561943efef8c613f8&os=Linux&osVersion=4.7.7-200.fc24.x86_64%20%28%231%20SMP%20Sat%20Oct%208%2000%3A21%3A59%20UTC%202016%29&cpu=i386&serverVersion=1.2.4.2949-4e494e4&systemRevision=4e494e4'
+2016-11-01 09:30:31,019 (7f57267fc700) :  INFO (storeservice:495) - No beta plugins.
+2016-11-01 09:30:31,024 (7f57267fc700) :  INFO (storeservice:531) - 'Services' plug-in [com.plexapp.system.services] is up to date (6ed935d)
+2016-11-01 09:30:31,025 (7f57267fc700) :  INFO (storeservice:362) - All plug-ins are up to date
+2016-11-01 09:30:31,025 (7f57267fc700) :  DEBUG (runtime:1150) - Scheduled a timed thread named 'auto_update_thread'
+2016-11-01 09:30:35,553 (7f570effd700) :  INFO (datakit:131) - Saved the dictionary file
