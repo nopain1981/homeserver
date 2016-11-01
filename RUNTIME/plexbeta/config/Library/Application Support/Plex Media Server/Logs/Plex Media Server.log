@@ -2271,3 +2271,27 @@ Nov 01, 2016 03:48:02.219 [0x7f90833fc700] DEBUG - Network change.
 Nov 01, 2016 03:48:02.219 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
 Nov 01, 2016 03:48:02.219 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
 Nov 01, 2016 03:51:13.215 [0x7f90893ff700] DEBUG - Sync: uploadStatus
+Nov 01, 2016 04:13:40.746 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=88, type=RTM_DELADDR, flags=0x0
+Nov 01, 2016 04:13:40.746 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink address message family=2, index=3, flags=0x0
+Nov 01, 2016 04:13:40.746 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 04:13:40.746 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 04:13:40.746 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 04:21:13.215 [0x7f90893ff700] DEBUG - Sync: uploadStatus
+Nov 01, 2016 04:21:14.909 [0x7f90893ff700] DEBUG - PublicAddressManager: Obtaining public address and mapping port.
+Nov 01, 2016 04:21:14.909 [0x7f907cbf7700] DEBUG - PublicAddressManager: Obtaining public IP.
+Nov 01, 2016 04:21:14.909 [0x7f907cbf7700] DEBUG - HTTP requesting GET http://plex.tv/pms/:/ip
+Nov 01, 2016 04:21:15.024 [0x7f907cbf7700] DEBUG - HTTP 200 response from GET http://plex.tv/pms/:/ip
+Nov 01, 2016 04:21:15.024 [0x7f907cbf7700] DEBUG - PublicAddressManager: Got public IP from http://plex.tv: 178.83.170.186
+Nov 01, 2016 04:21:27.037 [0x7f907cbf7700] DEBUG - NAT: UPnP, getPublicIP didn't find usable IGD.
+Nov 01, 2016 04:21:27.287 [0x7f907cbf7700] WARN - NAT: PMP, got an error: Not Supported by gateway.
+Nov 01, 2016 04:35:04.316 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=88, type=RTM_DELADDR, flags=0x0
+Nov 01, 2016 04:35:04.316 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink address message family=2, index=3, flags=0x0
+Nov 01, 2016 04:35:04.316 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 04:35:04.316 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 04:35:04.316 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 04:51:13.215 [0x7f907cbf7700] DEBUG - Sync: uploadStatus
+Nov 01, 2016 04:57:00.028 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=88, type=RTM_DELADDR, flags=0x0
+Nov 01, 2016 04:57:00.028 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink address message family=2, index=3, flags=0x0
+Nov 01, 2016 04:57:00.028 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 04:57:00.028 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 04:57:00.029 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
