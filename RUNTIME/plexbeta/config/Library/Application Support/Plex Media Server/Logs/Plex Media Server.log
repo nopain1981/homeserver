@@ -2295,3 +2295,30 @@ Nov 01, 2016 04:57:00.028 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink add
 Nov 01, 2016 04:57:00.028 [0x7f90833fc700] DEBUG - Network change.
 Nov 01, 2016 04:57:00.028 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
 Nov 01, 2016 04:57:00.029 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 05:21:13.220 [0x7f90893ff700] DEBUG - Sync: uploadStatus
+Nov 01, 2016 05:21:14.909 [0x7f90893ff700] DEBUG - PublicAddressManager: Obtaining public address and mapping port.
+Nov 01, 2016 05:21:14.909 [0x7f907abf3700] DEBUG - PublicAddressManager: Obtaining public IP.
+Nov 01, 2016 05:21:14.909 [0x7f907abf3700] DEBUG - HTTP requesting GET http://plex.tv/pms/:/ip
+Nov 01, 2016 05:21:15.010 [0x7f907abf3700] DEBUG - HTTP 200 response from GET http://plex.tv/pms/:/ip
+Nov 01, 2016 05:21:15.010 [0x7f907abf3700] DEBUG - PublicAddressManager: Got public IP from http://plex.tv: 178.83.170.186
+Nov 01, 2016 05:21:27.023 [0x7f907abf3700] DEBUG - NAT: UPnP, getPublicIP didn't find usable IGD.
+Nov 01, 2016 05:21:27.273 [0x7f907abf3700] WARN - NAT: PMP, got an error: Not Supported by gateway.
+Nov 01, 2016 05:23:22.495 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=88, type=RTM_DELADDR, flags=0x0
+Nov 01, 2016 05:23:22.495 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink address message family=2, index=3, flags=0x0
+Nov 01, 2016 05:23:22.495 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 05:23:22.495 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 05:23:22.495 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 05:46:59.384 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=88, type=RTM_DELADDR, flags=0x0
+Nov 01, 2016 05:46:59.384 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink address message family=2, index=3, flags=0x0
+Nov 01, 2016 05:46:59.384 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 05:46:59.384 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 05:46:59.384 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 05:51:13.220 [0x7f907abf3700] DEBUG - Sync: uploadStatus
+Nov 01, 2016 06:06:18.056 [0x7f907abf3700] DEBUG - HTTP requesting POST http://www.google-analytics.com/collect
+Nov 01, 2016 06:06:18.121 [0x7f907abf3700] DEBUG - HTTP 200 response from POST http://www.google-analytics.com/collect
+Nov 01, 2016 06:06:18.121 [0x7f907abf3700] DEBUG - Sent analytics request: 200
+Nov 01, 2016 06:08:29.287 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=88, type=RTM_DELADDR, flags=0x0
+Nov 01, 2016 06:08:29.287 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink address message family=2, index=3, flags=0x0
+Nov 01, 2016 06:08:29.287 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 06:08:29.287 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 06:08:29.287 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
