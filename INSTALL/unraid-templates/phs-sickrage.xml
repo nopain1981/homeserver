@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>phs.sickrage</Name>
+  <Repository>nopain1981/sickrage</Repository>
+  <Registry>https://registry.hub.docker.com/u/nopain1981/sickrage/</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Overview>&#xD;
+    SickRage is a Video File Manager for TV Shows, It watches for new episodes of your favorite shows and when they are posted it does its magic. SickRage is currently in beta release stage. There may be severe bugs in it and at any given time it may not work at all.[br][br]&#xD;
+    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]&#xD;
+    [b]/config[/b] This is where sickrage will store it's configuration file, database and logs.[br]&#xD;
+    [b]/data[/b] This path is used retrieve the downloaded files by your downloader application.[br]&#xD;
+    [b]/media[/b] This is where sickrage will scan for media files.&#xD;
+  </Overview>
+  <Category>Downloaders: MediaApp:Video</Category>
+  <WebUI>http://[IP]:[PORT:8081]/sickrage</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/sickrage-icon.png</Icon>
+  <ExtraParams/>
+  <DateInstalled>1477999551</DateInstalled>
+  <Description>&#xD;
+    SickRage is a Video File Manager for TV Shows, It watches for new episodes of your favorite shows and when they are posted it does its magic. SickRage is currently in beta release stage. There may be severe bugs in it and at any given time it may not work at all.[br][br]&#xD;
+    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]&#xD;
+    [b]/config[/b] This is where sickrage will store it's configuration file, database and logs.[br]&#xD;
+    [b]/data[/b] This path is used retrieve the downloaded files by your downloader application.[br]&#xD;
+    [b]/media[/b] This is where sickrage will scan for media files.&#xD;
+  </Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8081</HostPort>
+        <ContainerPort>8081</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/docker/sickrage/data</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/storage/</HostDir>
+      <ContainerDir>/storage</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/docker/sickrage/config</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>50000</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>50000</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Config Name="Host Port 1" Target="8081" Default="8081" Mode="tcp" Description="Container Port: 8081" Type="Port" Display="always" Required="true" Mask="false">8081</Config>
+  <Config Name="Host Path 2" Target="/data" Default="/mnt/user/docker/sickrage/data" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/docker/sickrage/data</Config>
+  <Config Name="Key 1" Target="PUID" Default="99" Mode="50000" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false">50000</Config>
+  <Config Name="Key 2" Target="PGID" Default="100" Mode="50000" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false">50000</Config>
+  <Config Name="Storage" Target="/storage" Default="/mnt/user/storage/" Mode="rw" Description="Container Path: /storage" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/storage/</Config>
+  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/docker/sickrage/config" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/docker/sickrage/config</Config>
+</Container>

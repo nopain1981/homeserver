@@ -1,0 +1,182 @@
+11-01 11:41:06 INFO [0m[  couchpotato.core.loader] Loaded core: _core[0m
+11-01 11:41:06 INFO [0m[  couchpotato.core.loader] Loaded core: clientscript[0m
+11-01 11:41:06 INFO [0m[  couchpotato.core.loader] Loaded core: desktop[0m
+11-01 11:41:06 INFO [0m[  couchpotato.core.loader] Loaded core: downloader[0m
+11-01 11:41:06 INFO [0m[  couchpotato.core.loader] Loaded core: scheduler[0m
+11-01 11:41:06 INFO [0m[  couchpotato.core.loader] Loaded core: updater[0m
+11-01 11:41:06 INFO [0m[  couchpotato.core.loader] Loaded plugin: automation[0m
+11-01 11:41:06 INFO [0m[  couchpotato.core.loader] Loaded plugin: browser[0m
+11-01 11:41:06 INFO [0m[  couchpotato.core.loader] Loaded plugin: category[0m
+11-01 11:41:06 INFO [0m[  couchpotato.core.loader] Loaded plugin: custom[0m
+11-01 11:41:06 INFO [0m[  couchpotato.core.loader] Loaded plugin: dashboard[0m
+11-01 11:41:06 INFO [0m[tato.core._base.scheduler] Scheduling file.cleanup, interval: hours = 24, minutes = 0, seconds = 0[0m
+11-01 11:41:06 INFO [0m[  couchpotato.core.loader] Loaded plugin: file[0m
+11-01 11:41:06 INFO [0m[  couchpotato.core.loader] Loaded plugin: log[0m
+11-01 11:41:06 INFO [0m[  couchpotato.core.loader] Loaded plugin: manage[0m
+11-01 11:41:06 INFO [0m[  couchpotato.core.loader] Loaded plugin: profile[0m
+11-01 11:41:06 INFO [0m[  couchpotato.core.loader] Loaded plugin: quality[0m
+11-01 11:41:06 INFO [0m[tato.core._base.scheduler] Scheduling movie.clean_releases, interval: hours = 12, minutes = 0, seconds = 0[0m
+11-01 11:41:06 INFO [0m[  couchpotato.core.loader] Loaded plugin: release[0m
+11-01 11:41:06 INFO [0m[  couchpotato.core.loader] Loaded plugin: renamer[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded plugin: scanner[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded plugin: score[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded plugin: subtitle[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded plugin: trailer[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded plugin: userscript[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded plugin: wizard[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded downloaders: blackhole[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded downloaders: deluge[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded downloaders: hadouken[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded downloaders: nzbget[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded downloaders: nzbvortex[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded downloaders: pneumatic[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded downloaders: putio[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded downloaders: qbittorrent_[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded downloaders: rtorrent_[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded downloaders: sabnzbd[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded downloaders: synology[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded downloaders: transmission[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded downloaders: utorrent[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded notifications: androidpn[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded notifications: boxcar2[0m
+11-01 11:41:07 INFO [0m[tato.core._base.scheduler] Scheduling core.check_messages, interval: hours = 12, minutes = 0, seconds = 0[0m
+11-01 11:41:07 INFO [0m[tato.core._base.scheduler] Scheduling core.clean_messages, interval: hours = 0, minutes = 0, seconds = 15[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded notifications: core[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded notifications: email_[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded notifications: emby[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded notifications: growl[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded notifications: homey[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded notifications: nmj[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded notifications: notifymyandroid[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded notifications: plex[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded notifications: prowl[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded notifications: pushalot[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded notifications: pushbullet[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded notifications: pushover[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded notifications: slack[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded notifications: synoindex[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded notifications: telegrambot[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded notifications: toasty[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded notifications: trakt[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded notifications: twitter[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded notifications: webhook[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded notifications: xbmc[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded notifications: xmpp_[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media__base: library[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media__base_matcher: matcher[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media__base_media: media[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media__base_search: search[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media__base: searcher[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie__base: _base[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie: charts[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie: library[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_automation: bluray[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_automation: crowdai[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_automation: flixster[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_automation: goodfilms[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_automation: hummingbird[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_automation: imdb[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_automation: itunes[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_automation: kinepolis[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_automation: letterboxd[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_automation: moviemeter[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_automation: movies_io[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_automation: popularmovies[0m
+11-01 11:41:07 INFO [0m[tato.core._base.scheduler] Scheduling updater.check, interval: hours = 24, minutes = 0, seconds = 0[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_automation: trakt[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_info: _modifier[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_info: couchpotatoapi[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_info: fanarttv[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_info: omdbapi[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_info: themoviedb[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_metadata: mediabrowser[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_metadata: ps3[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_metadata: wdtv[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_metadata: wmc[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_metadata: xbmc[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_nzb: binsearch[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_nzb: newznab[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_nzb: nzbclub[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_nzb: omgwtfnzbs[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_torrent: alpharatio[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_torrent: awesomehd[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_torrent: bithdtv[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_torrent: bitsoup[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_torrent: hd4free[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_torrent: hdbits[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_torrent: ilovetorrents[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_torrent: iptorrents[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_torrent: kickasstorrents[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_torrent: magnetdl[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_torrent: morethantv[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_torrent: passthepopcorn[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_torrent: rarbg[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_torrent: sceneaccess[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_torrent: scenetime[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_torrent: thepiratebay[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_torrent: torrentbytes[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_torrent: torrentday[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_torrent: torrentleech[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_torrent: torrentpotato[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_torrent: torrentshack[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_torrent: torrentz[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_trailer: hdtrailers[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_userscript: allocine[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_userscript: appletrailers[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_userscript: criticker[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_userscript: filmcentrum[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_userscript: filmstarts[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_userscript: filmweb[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_userscript: flickchart[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_userscript: imdb[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_userscript: letterboxd[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_userscript: moviemeter[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_userscript: moviesio[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_userscript: reddit[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_userscript: rottentomatoes[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_userscript: tmdb[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_userscript: trakt[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie_providers_userscript: youteather[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie: searcher[0m
+11-01 11:41:07 INFO [0m[  couchpotato.core.loader] Loaded media_movie: suggestion[0m
+11-01 11:41:15 INFO [0m[tato.core.plugins.quality] Creating profile: 2160p[0m
+11-01 11:41:15 INFO [0m[tato.core.plugins.quality] Creating profile: BR-Disk[0m
+11-01 11:41:15 INFO [0m[tato.core.plugins.quality] Creating profile: 1080p[0m
+11-01 11:41:15 INFO [0m[tato.core.plugins.quality] Creating profile: 720p[0m
+11-01 11:41:15 INFO [0m[tato.core.plugins.quality] Creating profile: BR-Rip[0m
+11-01 11:41:15 INFO [0m[tato.core.plugins.quality] Creating profile: DVD-R[0m
+11-01 11:41:15 INFO [0m[tato.core.plugins.quality] Creating profile: DVD-Rip[0m
+11-01 11:41:15 INFO [0m[tato.core.plugins.quality] Creating profile: Screener[0m
+11-01 11:41:15 INFO [0m[tato.core.plugins.quality] Creating profile: R5[0m
+11-01 11:41:15 INFO [0m[tato.core.plugins.quality] Creating profile: TeleCine[0m
+11-01 11:41:15 INFO [0m[tato.core.plugins.quality] Creating profile: TeleSync[0m
+11-01 11:41:15 INFO [0m[tato.core.plugins.quality] Creating profile: Cam[0m
+11-01 11:41:15 INFO [0m[tato.core.plugins.profile] Creating default profile: Best[0m
+11-01 11:41:15 INFO [0m[tato.core.plugins.profile] Creating default profile: HD[0m
+11-01 11:41:15 INFO [0m[tato.core.plugins.profile] Creating default profile: SD[0m
+11-01 11:41:15 INFO [0m[tato.core.plugins.profile] Creating default profile: Prefer 3D HD[0m
+11-01 11:41:15 INFO [0m[tato.core.plugins.profile] Creating default profile: 3D HD[0m
+11-01 11:41:15 INFO [0m[tato.core.plugins.profile] Creating default profile: UHD 4K[0m
+11-01 11:41:15 INFO [0m[       couchpotato.runner] Starting server on port 5050[0m
+11-01 11:41:15 INFO [0m[tato.core._base.scheduler] Scheduling "movie.searcher.all", cron: day = *, hour = 20, minute = 56[0m
+11-01 11:41:15 INFO [0m[tato.core._base.scheduler] Scheduling updater.check, interval: hours = 24, minutes = 0, seconds = 0[0m
+11-01 11:41:15 INFO [0m[potato.core._base.updater] Checking for new version on github for CouchPotatoServer[0m
+11-01 11:41:15 INFO [0m[tato.core._base.scheduler] Scheduling automation.add_movies, interval: hours = 12, minutes = 0, seconds = 0[0m
+11-01 11:41:15 ERROR [31m[   couchpotato.core.event] Error in event "app.load", that wasn't caught: Traceback (most recent call last):
+  File "/couchpotato/couchpotato/core/event.py", line 15, in runHandler
+    return handler(*args, **kwargs)
+  File "/couchpotato/couchpotato/core/media/movie/providers/info/themoviedb.py", line 57, in config
+    languages.remove(self.default_language)
+ValueError: list.remove(x): x not in list
+encoding=UTF-8 debug=False args=['--data_dir=/config', '--config_file=/config/config.ini'] app_dir=/couchpotato data_dir=/config desktop=None options=Namespace(config_file='/config/config.ini', console_log=False, daemon=False, data_dir='/config', debug=False, pid_file='/config/couchpotato.pid', quiet=False) [0m
+11-01 11:41:15 INFO [0m[chpotato.core._base._core] Launching browser[0m
+11-01 11:41:16 INFO [0m[hpotato.core.plugins.base] Opening url: get https://api.couchpota.to/messages/?last_check=0, data: [][0m
+11-01 11:41:16 INFO [0m[potato.core._base.updater] === VERSION git:(CouchPotato:CouchPotatoServer develop) 669101ab (2016-10-22 12:11:22), using GitUpdater ===[0m
+11-01 11:41:16 INFO [0m[hpotato.core.plugins.base] Opening url: post https://api.couchpota.to/suggest/, data: ['ignore', 'movies'][0m
+11-01 11:41:16 INFO [0m[iders.info.couchpotatoapi] Found suggestions for 0 movies, 0 ignored[0m
+11-01 11:41:16 INFO [0m[hpotato.core.plugins.base] Opening url: get https://image.tmdb.org/t/p/w154/inVq3FRqcYIRl2la8iZikYYxFNR.jpg, data: [][0m
+11-01 11:41:16 INFO [0m[hpotato.core.plugins.base] Opening url: get https://image.tmdb.org/t/p/w154/weUSwMdQIa3NaXVzwUoIIcAi85d.jpg, data: [][0m
+11-01 11:41:16 INFO [0m[hpotato.core.plugins.base] Opening url: get https://image.tmdb.org/t/p/w154/sM33SANp9z6rXW8Itn7NnG1GOEs.jpg, data: [][0m
+11-01 11:41:16 INFO [0m[hpotato.core.plugins.base] Opening url: get https://image.tmdb.org/t/p/w154/hE24GYddaxB9MVZl1CaiI86M3kp.jpg, data: [][0m
+11-01 11:41:16 INFO [0m[hpotato.core.plugins.base] Opening url: get https://image.tmdb.org/t/p/w154/bnX5PqAdQZRXSw3aX3DutDcdso5.jpg, data: [][0m
+11-01 11:41:16 INFO [0m[hpotato.core.plugins.base] Opening url: get https://image.tmdb.org/t/p/w154/5TQ6YDmymBpnF005OyoB7ohZps9.jpg, data: [][0m

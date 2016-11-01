@@ -1,24 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Containers>
-<Beta>False</Beta>
-<Category>MediaApp:Video MediaApp:Music MediaApp:Photos MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
-  <Name>phs-tvheadend</Name>
-  <Description>
-    Tvheadend is a TV streaming server and recorder for Linux, FreeBSD and Android supporting DVB-S, DVB-S2, DVB-C, DVB-T, ATSC, ISDB-T, IPTV, SAT>IP and HDHomeRun as input sources. Tvheadend offers the HTTP (VLC, MPlayer), HTSP (Kodi, Movian) and SAT>IP streaming. Multiple EPG sources are supported (over-the-air DVB and ATSC including OpenTV DVB extensions, XMLTV, PyXML).[br][br]
-    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
-    [b]/config[/b] This is where plex will store it's configuration file, database and logs.[br]
-    [b]/data[/b] This path is used retrieve the downloaded files by your downloader application.
-  </Description>
-  <Overview>
-    Tvheadend is a TV streaming server and recorder for Linux, FreeBSD and Android supporting DVB-S, DVB-S2, DVB-C, DVB-T, ATSC, ISDB-T, IPTV, SAT>IP and HDHomeRun as input sources. Tvheadend offers the HTTP (VLC, MPlayer), HTSP (Kodi, Movian) and SAT>IP streaming. Multiple EPG sources are supported (over-the-air DVB and ATSC including OpenTV DVB extensions, XMLTV, PyXML).
-  </Overview>
-  <Support></Support>
-  <Registry>https://registry.hub.docker.com/u/nopain1981/tvheadend/</Registry>
-  <GitHub>https://github.com/nopain1981/homeserver/tree/master/INSTALL/tvheadend</GitHub>
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>phs.tvheadend</Name>
   <Repository>nopain1981/tvheadend</Repository>
-  <Project>https://tvheadend.org/</Project>
-  <BindTime>true</BindTime>
+  <Registry>https://registry.hub.docker.com/u/nopain1981/tvheadend/</Registry>
+  <Network>host</Network>
   <Privileged>false</Privileged>
+  <Support/>
+  <Overview>&#xD;
+    Tvheadend is a TV streaming server and recorder for Linux, FreeBSD and Android supporting DVB-S, DVB-S2, DVB-C, DVB-T, ATSC, ISDB-T, IPTV, SAT&amp;gt;IP and HDHomeRun as input sources. Tvheadend offers the HTTP (VLC, MPlayer), HTSP (Kodi, Movian) and SAT&amp;gt;IP streaming. Multiple EPG sources are supported (over-the-air DVB and ATSC including OpenTV DVB extensions, XMLTV, PyXML).[br][br]&#xD;
+    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]&#xD;
+    [b]/config[/b] This is where plex will store it's configuration file, database and logs.[br]&#xD;
+    [b]/data[/b] This path is used retrieve the downloaded files by your downloader application.&#xD;
+  </Overview>
+  <Category>MediaApp:Video MediaApp:Music MediaApp:Photos MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
+  <WebUI>http://[IP]:[PORT:9981]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/tvheadend-icon.png</Icon>
+  <ExtraParams/>
+  <DateInstalled>1478000250</DateInstalled>
+  <Description>&#xD;
+    Tvheadend is a TV streaming server and recorder for Linux, FreeBSD and Android supporting DVB-S, DVB-S2, DVB-C, DVB-T, ATSC, ISDB-T, IPTV, SAT&amp;gt;IP and HDHomeRun as input sources. Tvheadend offers the HTTP (VLC, MPlayer), HTSP (Kodi, Movian) and SAT&amp;gt;IP streaming. Multiple EPG sources are supported (over-the-air DVB and ATSC including OpenTV DVB extensions, XMLTV, PyXML).[br][br]&#xD;
+    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]&#xD;
+    [b]/config[/b] This is where plex will store it's configuration file, database and logs.[br]&#xD;
+    [b]/data[/b] This path is used retrieve the downloaded files by your downloader application.&#xD;
+  </Description>
   <Networking>
     <Mode>host</Mode>
     <Publish>
@@ -34,29 +39,34 @@
       </Port>
     </Publish>
   </Networking>
-  <Environment>
-    <Variable>
-      <Name>PUID</Name>
-      <Value>50000</Value>
-    </Variable>
-    <Variable>
-      <Name>PGID</Name>
-      <Value>50000</Value>
-    </Variable>
-  </Environment>
   <Data>
-    <Volume>
-      <HostDir>/mnt/user/docker/tvheadend/config</HostDir>
-      <ContainerDir>/config</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
     <Volume>
       <HostDir>/mnt/user/docker/tvheadend/data</HostDir>
       <ContainerDir>/data</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
+    <Volume>
+      <HostDir>/mnt/user/docker/tvheadend/config/</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
   </Data>
-  <WebUI>http://[IP]:[PORT:9981]/</WebUI>
-  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/tvheadend-icon.png</Icon>
-</Containers>
-
+  <Environment>
+    <Variable>
+      <Value>50000</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>50000</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Config Name="Host Port 1" Target="9981" Default="9981" Mode="tcp" Description="n/a" Type="Port" Display="always" Required="true" Mask="false">9981</Config>
+  <Config Name="Host Port 2" Target="9982" Default="9982" Mode="tcp" Description="n/a" Type="Port" Display="always" Required="true" Mask="false">9982</Config>
+  <Config Name="Host Path 2" Target="/data" Default="/mnt/user/docker/tvheadend/data/" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/docker/tvheadend/data</Config>
+  <Config Name="Key 1" Target="PUID" Default="50000" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false">50000</Config>
+  <Config Name="Key 2" Target="PGID" Default="50000" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false">50000</Config>
+  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/docker/tvheadend/config/" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/docker/tvheadend/config/</Config>
+</Container>

@@ -42,4 +42,4 @@ echo "[DONE]"
 
 CONFIG=${CONFIG:-/config/config.ini}
 echo "Starting CouchPotato..."
-exec su -pc "./CouchPotato.py --data_dir=$(dirname ${CONFIG})/data --config_file=${CONFIG}" ${USER}
+exec su -pc "./CouchPotato.py --data_dir=$(dirname ${CONFIG}) --config_file=${CONFIG}" ${USER}

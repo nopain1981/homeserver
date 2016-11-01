@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>phs.oscam</Name>
+  <Repository>nopain1981/oscam</Repository>
+  <Registry>https://registry.hub.docker.com/u/nopain1981/oscam/</Registry>
+  <Network>host</Network>
+  <Privileged>false</Privileged>
+  <Support>http://lime-technology.com/forum/index.php?topic=37671.0</Support>
+  <Overview>Oscam is a card server and client for decoding DVB streams over DVB-S, DVB-C, DVB-T or IPTV.[br]&#xD;
+		http://www.streamboard.tv/oscam/[br]&#xD;
+		[b][span style='color: #E80000;']Directions:[/span][/b][br]&#xD;
+		[b]/config[/b] : This is where Oscam will store it's configuration.[br][br]&#xD;
+</Overview>
+  <Category>MediaServer:Other</Category>
+  <WebUI>http://[IP]:[PORT:8888]</WebUI>
+  <TemplateURL/>
+  <Icon>http://i.imgur.com/8LadrLg.png?1</Icon>
+  <ExtraParams/>
+  <DateInstalled>1477999643</DateInstalled>
+  <Description>Oscam is a card server and client for decoding DVB streams over DVB-S, DVB-C, DVB-T or IPTV.[br]&#xD;
+		http://www.streamboard.tv/oscam/[br]&#xD;
+		[b][span style='color: #E80000;']Directions:[/span][/b][br]&#xD;
+		[b]/config[/b] : This is where Oscam will store it's configuration.[br][br]&#xD;
+</Description>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish>
+      <Port>
+        <HostPort>1337</HostPort>
+        <ContainerPort>1337</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>10000</HostPort>
+        <ContainerPort>10000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/docker/oscam/tmp</HostDir>
+      <ContainerDir>/tmp</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/docker/oscam/etc</HostDir>
+      <ContainerDir>/usr/local/etc</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/docker/oscam/config</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Config Name="Host Port 1" Target="1337" Default="8888" Mode="tcp" Description="Container Port: 8888" Type="Port" Display="always" Required="true" Mask="false">1337</Config>
+  <Config Name="Host Port 2" Target="10000" Default="10000" Mode="tcp" Description="Container Port: 10000" Type="Port" Display="always" Required="true" Mask="false">10000</Config>
+  <Config Name="tmp" Target="/tmp" Default="/mnt/user/docker/oscam/tmp" Mode="rw" Description="Container Path: /tmp" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/docker/oscam/tmp</Config>
+  <Config Name="oscamfiles" Target="/usr/local/etc" Default="/mnt/user/docker/oscam/etc" Mode="rw" Description="Container Path: /usr/local/etc" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/docker/oscam/etc</Config>
+  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/docker/oscam/config" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/docker/oscam/config</Config>
+</Container>
