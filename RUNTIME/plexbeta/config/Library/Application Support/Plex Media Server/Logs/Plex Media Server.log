@@ -2424,3 +2424,9 @@ Nov 01, 2016 10:23:27.222 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink add
 Nov 01, 2016 10:23:27.222 [0x7f90833fc700] DEBUG - Network change.
 Nov 01, 2016 10:23:27.222 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
 Nov 01, 2016 10:23:27.222 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 10:45:18.095 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=88, type=RTM_DELADDR, flags=0x0
+Nov 01, 2016 10:45:18.096 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink address message family=2, index=3, flags=0x0
+Nov 01, 2016 10:45:18.096 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 10:45:18.096 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 10:45:18.096 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 10:51:13.224 [0x7f907abf3700] DEBUG - Sync: uploadStatus
