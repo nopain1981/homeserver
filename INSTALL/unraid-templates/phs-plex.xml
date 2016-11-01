@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>PlexBeta</Name>
+  <Name>nopain1981-PlexBeta</Name>
   <Repository>nopain1981/plexbeta</Repository>
   <Registry>https://registry.hub.docker.com/u/nopain1981/plexbeta/</Registry>
   <Network>host</Network>

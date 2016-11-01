@@ -2419,3 +2419,8 @@ Nov 01, 2016 10:21:15.014 [0x7f907abf3700] DEBUG - HTTP 200 response from GET ht
 Nov 01, 2016 10:21:15.015 [0x7f907abf3700] DEBUG - PublicAddressManager: Got public IP from http://plex.tv: 178.83.170.186
 Nov 01, 2016 10:21:27.027 [0x7f907abf3700] DEBUG - NAT: UPnP, getPublicIP didn't find usable IGD.
 Nov 01, 2016 10:21:27.278 [0x7f907abf3700] WARN - NAT: PMP, got an error: Not Supported by gateway.
+Nov 01, 2016 10:23:27.222 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=88, type=RTM_DELADDR, flags=0x0
+Nov 01, 2016 10:23:27.222 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink address message family=2, index=3, flags=0x0
+Nov 01, 2016 10:23:27.222 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 10:23:27.222 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 10:23:27.222 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
