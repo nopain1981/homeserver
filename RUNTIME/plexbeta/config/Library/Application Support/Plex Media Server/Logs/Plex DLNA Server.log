@@ -1,14 +1,11 @@
-Oct 31, 2016 14:27:48.839 [0x7f7aac7ff700] INFO - Plex DLNA Server v1.2.3.2914-1ff0f18 - ubuntu PC x86_64 - build: linux-ubuntu-x86_64 - GMT 00:00
-Oct 31, 2016 14:27:48.839 [0x7f7aac7ff700] INFO - Linux version: 4.7.7-200.fc24.x86_64 (#1 SMP Sat Oct 8 00:21:59 UTC 2016), language: C
-Oct 31, 2016 14:27:48.839 [0x7f7aac7ff700] INFO - Processor Intel(R) Core(TM) i7-5820K CPU @ 3.30GHz
-Oct 31, 2016 14:27:48.836 [0x7f7ab3a897c0] DEBUG - Unique device name = 3f7d8b45-fd54-bdb4-3764-58e561943efe
-Oct 31, 2016 14:27:48.836 [0x7f7ab3a897c0] DEBUG - DLNA server port: 32469
-Oct 31, 2016 14:27:48.836 [0x7f7ab3a897c0] DEBUG - PMS: http://127.0.0.1:32400/
-Oct 31, 2016 14:27:48.836 [0x7f7ab3a897c0] DEBUG - MyPlex: https://plex.tv/
-Oct 31, 2016 14:27:49.351 [0x7f7ab3a897c0] DEBUG - Loading com.plexapp.dlna is complete (success=1)
-Oct 31, 2016 14:27:49.707 [0x7f7ab3a897c0] ERROR - Couldn't rename file /config/Library/Application Support/Plex Media Server/Plug-in Support/Databases/com.plexapp.dlna-new.db-shm to /config/Library/Application Support/Plex Media Server/Plug-in Support/Databases/com.plexapp.dlna.db-shm: No such file or directory
-Oct 31, 2016 14:27:49.707 [0x7f7ab3a897c0] ERROR - Couldn't rename file /config/Library/Application Support/Plex Media Server/Plug-in Support/Databases/com.plexapp.dlna-new.db-wal to /config/Library/Application Support/Plex Media Server/Plug-in Support/Databases/com.plexapp.dlna.db-wal: No such file or directory
-Oct 31, 2016 14:27:49.712 [0x7f7ab3a897c0] DEBUG - Reading system DLNA client profiles
-Oct 31, 2016 14:27:49.762 [0x7f7ab3a897c0] DEBUG - Read 22 DLNA client profiles
-Oct 31, 2016 14:27:49.795 [0x7f7ab3a897c0] DEBUG - DLNA device discovery enabled every 60 seconds
-Oct 31, 2016 14:27:49.799 [0x7f7ab3a897c0] DEBUG - Initialization complete
+Nov 01, 2016 02:07:17.170 [0x7f5a2dfff700] INFO - Plex DLNA Server v1.2.0.2838-a68e2fe - ubuntu PC x86_64 - build: linux-ubuntu-x86_64 - GMT 00:00
+Nov 01, 2016 02:07:17.170 [0x7f5a2dfff700] INFO - Linux version: 4.7.7-200.fc24.x86_64 (#1 SMP Sat Oct 8 00:21:59 UTC 2016), language: C
+Nov 01, 2016 02:07:17.170 [0x7f5a2dfff700] INFO - Processor Intel(R) Core(TM) i7-5820K CPU @ 3.30GHz
+Nov 01, 2016 02:07:17.160 [0x7f5a352137c0] DEBUG - Unique device name = 3f7d8b45-fd54-bdb4-3764-58e561943efe
+Nov 01, 2016 02:07:17.160 [0x7f5a352137c0] DEBUG - DLNA server port: 32469
+Nov 01, 2016 02:07:17.160 [0x7f5a352137c0] DEBUG - PMS: http://127.0.0.1:32400/
+Nov 01, 2016 02:07:17.160 [0x7f5a352137c0] DEBUG - MyPlex: https://plex.tv/
+Nov 01, 2016 02:07:17.310 [0x7f5a352137c0] DEBUG - Reading system DLNA client profiles
+Nov 01, 2016 02:07:17.329 [0x7f5a352137c0] DEBUG - Read 22 DLNA client profiles
+Nov 01, 2016 02:07:17.334 [0x7f5a352137c0] DEBUG - DLNA device discovery enabled every 60 seconds
+Nov 01, 2016 02:07:17.334 [0x7f5a352137c0] DEBUG - Initialization complete
