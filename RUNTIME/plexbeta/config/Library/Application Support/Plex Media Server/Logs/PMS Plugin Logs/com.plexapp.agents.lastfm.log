@@ -1,52 +1,51 @@
-2016-11-01 01:55:15,725 (7f6a1b5eb700) :  INFO (core:349) - Starting framework core - Version: 2.6.3, Build: a68e2fe (Fri Sep 30 01:34:01 UTC 2016)
-2016-11-01 01:55:15,725 (7f6a1b5eb700) :  DEBUG (core:361) - Using the elevated policy
-2016-11-01 01:55:15,725 (7f6a1b5eb700) :  DEBUG (core:450) - Starting runtime component.
-2016-11-01 01:55:15,766 (7f6a1b5eb700) :  DEBUG (core:450) - Starting caching component.
-2016-11-01 01:55:15,767 (7f6a1b5eb700) :  DEBUG (core:450) - Starting data component.
-2016-11-01 01:55:15,767 (7f6a1b5eb700) :  DEBUG (core:450) - Starting networking component.
-2016-11-01 01:55:15,770 (7f6a1b5eb700) :  DEBUG (networking:284) - Loaded HTTP cookies
-2016-11-01 01:55:15,770 (7f6a1b5eb700) :  DEBUG (caching:108) - No info file found, trashing the cache folder
-2016-11-01 01:55:15,771 (7f6a1b5eb700) :  DEBUG (networking:452) - Setting the default network timeout to 20.0
-2016-11-01 01:55:15,772 (7f6a1b5eb700) :  DEBUG (core:450) - Starting localization component.
-2016-11-01 01:55:15,772 (7f6a1b5eb700) :  INFO (localization:409) - Setting the default locale to en-us
-2016-11-01 01:55:15,772 (7f6a1b5eb700) :  DEBUG (core:450) - Starting messaging component.
-2016-11-01 01:55:15,777 (7f6a1b5eb700) :  DEBUG (core:450) - Starting debugging component.
-2016-11-01 01:55:15,777 (7f6a1b5eb700) :  DEBUG (core:450) - Starting services component.
-2016-11-01 01:55:15,777 (7f6a1b5eb700) :  DEBUG (core:450) - Starting myplex component.
-2016-11-01 01:55:15,778 (7f6a1b5eb700) :  DEBUG (core:450) - Starting notifications component.
-2016-11-01 01:55:15,785 (7f69ef7fe700) :  DEBUG (networking:166) - Requesting 'http://127.0.0.1:32400/system/messaging/clear_events/com.plexapp.agents.lastfm'
-2016-11-01 01:55:16,022 (7f6a1b5eb700) :  DEBUG (accessor:68) - Creating a new model access point for provider com.plexapp.agents.lastfm in namespace 'metadata'
-2016-11-01 01:55:16,034 (7f6a1b5eb700) :  DEBUG (networking:166) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
-2016-11-01 01:55:16,269 (7f6a1b5eb700) :  DEBUG (runtime:1117) - Created a thread named 'load_all_services'
-2016-11-01 01:55:16,269 (7f69ef7fe700) :  DEBUG (services:265) - Plug-in is not daemonized - loading services from system
-2016-11-01 01:55:16,269 (7f69ef7fe700) :  DEBUG (networking:166) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/messaging/function/X0J1bmRsZVNlcnZpY2U6QWxsU2VydmljZXM_/Y2VyZWFsMQoxCmxpc3QKMApyMAo_/Y2VyZWFsMQoxCmRpY3QKMApyMAo_'
-2016-11-01 01:55:16,271 (7f6a1b5eb700) :  DEBUG (runtime:1117) - Created a thread named 'get_server_info'
-2016-11-01 01:55:16,271 (7f6a1b5eb700) :  DEBUG (core:150) - Finished starting framework core
-2016-11-01 01:55:16,271 (7f6a1b5eb700) :  DEBUG (core:560) - Loading plug-in code
-2016-11-01 01:55:16,332 (7f69ee7fc700) :  DEBUG (networking:166) - Requesting 'http://127.0.0.1:32400'
-2016-11-01 01:55:16,340 (7f69ee7fc700) :  DEBUG (core:538) - Machine identifier is 3f7d8b45fd54bdb4376458e561943efef8c613f8
-2016-11-01 01:55:16,340 (7f69ee7fc700) :  DEBUG (core:539) - Server version is 1.2.0.2838-a68e2fe
-2016-11-01 01:55:16,562 (7f6a1b5eb700) :  DEBUG (core:566) - Finished loading plug-in code
-2016-11-01 01:55:16,562 (7f6a1b5eb700) :  DEBUG (messaging:69) - Exposing function ArtistMbidLookup for remote access
-2016-11-01 01:55:16,562 (7f6a1b5eb700) :  DEBUG (messaging:69) - Exposing function GetMusicBrainzId for remote access
-2016-11-01 01:55:16,562 (7f6a1b5eb700) :  DEBUG (messaging:69) - Exposing function ArtistSearch for remote access
-2016-11-01 01:55:16,562 (7f6a1b5eb700) :  DEBUG (messaging:69) - Exposing function AlbumSearch for remote access
-2016-11-01 01:55:16,563 (7f6a1b5eb700) :  DEBUG (messaging:69) - Exposing function ArtistTopTracks for remote access
-2016-11-01 01:55:16,563 (7f6a1b5eb700) :  DEBUG (messaging:69) - Exposing function ArtistGetSimilar for remote access
-2016-11-01 01:55:16,563 (7f6a1b5eb700) :  DEBUG (messaging:69) - Exposing function ArtistGetEvents for remote access
-2016-11-01 01:55:16,563 (7f6a1b5eb700) :  DEBUG (agentkit:1115) - Creating new agent class called LastFmAgent
-2016-11-01 01:55:16,563 (7f6a1b5eb700) :  DEBUG (agentkit:933) - Updating agent information: [{'media_types': ['Artist'], 'accepts_from': None, 'fallback_agent': None, 'contributes_to': None, 'languages': ['en', 'sv', 'fr', 'es', 'de', 'pl', 'it', 'pt', 'ja', 'tr', 'ru', 'zh'], 'persist_stored_files': True, 'version': 0, 'primary_provider': True, 'prefs': True, 'name': 'Last.fm'}]
-2016-11-01 01:55:16,564 (7f6a1b5eb700) :  DEBUG (networking:166) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/messaging/function/X0FnZW50U2VydmljZTpVcGRhdGVJbmZv/Y2VyZWFsMQoxCmxpc3QKMApyMAo_/Y2VyZWFsMQo1CmRpY3QKbGlzdApkaWN0Cmxpc3QKbGlzdAoyCnMyNQpjb20ucGxleGFwcC5hZ2VudHMubGFzdGZtczEwCmlkZW50aWZpZXJyMQpzMTAKYWdlbnRfaW5mbzEKcjIKMTAKcjMKczExCm1lZGlhX3R5cGVzbnMxMgphY2NlcHRzX2Zyb21uczE0CmZhbGxiYWNrX2FnZW50bnMxNApjb250cmlidXRlc190b3I0CnM5Cmxhbmd1YWdlc2IxczIwCnBlcnNpc3Rfc3RvcmVkX2ZpbGVzaTAKczcKdmVyc2lvbmIxczE2CnByaW1hcnlfcHJvdmlkZXJiMXM1CnByZWZzczcKTGFzdC5mbXM0Cm5hbWUxCnM2CkFydGlzdDEyCnMyCmVuczIKc3ZzMgpmcnMyCmVzczIKZGVzMgpwbHMyCml0czIKcHRzMgpqYXMyCnRyczIKcnVzMgp6aHIwCg__'
-2016-11-01 01:55:16,777 (7f69ef7fe700) :  DEBUG (services:362) - Loaded services
-2016-11-01 01:55:16,783 (7f69eeffd700) :  DEBUG (services:438) - No shared code to load
-2016-11-01 01:55:16,796 (7f6a1b5eb700) :  DEBUG (agentkit:1115) - Creating new agent class called LastFmAlbumAgent
-2016-11-01 01:55:16,797 (7f6a1b5eb700) :  DEBUG (agentkit:933) - Updating agent information: [{'media_types': ['Artist'], 'accepts_from': None, 'fallback_agent': None, 'contributes_to': None, 'languages': ['en', 'sv', 'fr', 'es', 'de', 'pl', 'it', 'pt', 'ja', 'tr', 'ru', 'zh'], 'persist_stored_files': True, 'version': 0, 'primary_provider': True, 'prefs': True, 'name': 'Last.fm'}, {'media_types': ['Album'], 'accepts_from': None, 'fallback_agent': None, 'contributes_to': None, 'languages': ['en', 'sv', 'fr', 'es', 'de', 'pl', 'it', 'pt', 'ja', 'tr', 'ru', 'zh'], 'persist_stored_files': True, 'version': 0, 'primary_provider': True, 'prefs': True, 'name': 'Last.fm'}]
-2016-11-01 01:55:16,798 (7f6a1b5eb700) :  DEBUG (networking:166) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/messaging/function/X0FnZW50U2VydmljZTpVcGRhdGVJbmZv/Y2VyZWFsMQoxCmxpc3QKMApyMAo_/Y2VyZWFsMQo4CmRpY3QKbGlzdApkaWN0Cmxpc3QKbGlzdApkaWN0Cmxpc3QKbGlzdAoyCnMyNQpjb20ucGxleGFwcC5hZ2VudHMubGFzdGZtczEwCmlkZW50aWZpZXJyMQpzMTAKYWdlbnRfaW5mbzIKcjIKcjUKMTAKcjMKczExCm1lZGlhX3R5cGVzbnMxMgphY2NlcHRzX2Zyb21uczE0CmZhbGxiYWNrX2FnZW50bnMxNApjb250cmlidXRlc190b3I0CnM5Cmxhbmd1YWdlc2IxczIwCnBlcnNpc3Rfc3RvcmVkX2ZpbGVzaTAKczcKdmVyc2lvbmIxczE2CnByaW1hcnlfcHJvdmlkZXJiMXM1CnByZWZzczcKTGFzdC5mbXM0Cm5hbWUxCnM2CkFydGlzdDEyCnMyCmVuczIKc3ZzMgpmcnMyCmVzczIKZGVzMgpwbHMyCml0czIKcHRzMgpqYXMyCnRyczIKcnVzMgp6aDEwCnI2CnMxMQptZWRpYV90eXBlc25zMTIKYWNjZXB0c19mcm9tbnMxNApmYWxsYmFja19hZ2VudG5zMTQKY29udHJpYnV0ZXNfdG9yNwpzOQpsYW5ndWFnZXNiMXMyMApwZXJzaXN0X3N0b3JlZF9maWxlc2kwCnM3CnZlcnNpb25iMXMxNgpwcmltYXJ5X3Byb3ZpZGVyYjFzNQpwcmVmc3M3Ckxhc3QuZm1zNApuYW1lMQpzNQpBbGJ1bTEyCnMyCmVuczIKc3ZzMgpmcnMyCmVzczIKZGVzMgpwbHMyCml0czIKcHRzMgpqYXMyCnRyczIKcnVzMgp6aHIwCg__'
-2016-11-01 01:55:16,980 (7f6a1b5eb700) :  INFO (core:611) - Started plug-in
-2016-11-01 01:55:16,980 (7f6a1b5eb700) :  DEBUG (socketinterface:160) - Starting socket server
-2016-11-01 01:55:16,981 (7f6a1b5eb700) :  DEBUG (runtime:1117) - Created a thread named 'start'
-2016-11-01 01:55:16,981 (7f6a1b5eb700) :  INFO (socketinterface:184) - Socket server started on port 44883
-2016-11-01 01:55:16,981 (7f6a1b5eb700) :  INFO (pipeinterface:25) - Entering run loop
-2016-11-01 01:55:16,981 (7f6a1b5eb700) :  DEBUG (runtime:717) - Handling request GET /:/prefixes
-2016-11-01 01:55:16,982 (7f6a1b5eb700) :  DEBUG (runtime:814) - Found route matching /:/prefixes
-2016-11-01 01:55:16,983 (7f6a1b5eb700) :  DEBUG (runtime:924) - Response: [200] MediaContainer, 150 bytes
+2016-11-01 02:21:15,607 (7f00f6289700) :  INFO (core:349) - Starting framework core - Version: 2.6.3, Build: 4e494e4 (Sat Oct 29 23:34:22 UTC 2016)
+2016-11-01 02:21:15,611 (7f00f6289700) :  DEBUG (core:361) - Using the elevated policy
+2016-11-01 02:21:15,612 (7f00f6289700) :  DEBUG (core:450) - Starting runtime component.
+2016-11-01 02:21:15,649 (7f00f6289700) :  DEBUG (core:450) - Starting caching component.
+2016-11-01 02:21:15,649 (7f00f6289700) :  DEBUG (core:450) - Starting data component.
+2016-11-01 02:21:15,649 (7f00f6289700) :  DEBUG (core:450) - Starting networking component.
+2016-11-01 02:21:15,649 (7f00f6289700) :  DEBUG (networking:284) - Loaded HTTP cookies
+2016-11-01 02:21:15,650 (7f00f6289700) :  DEBUG (networking:452) - Setting the default network timeout to 20.0
+2016-11-01 02:21:15,650 (7f00f6289700) :  DEBUG (core:450) - Starting localization component.
+2016-11-01 02:21:15,650 (7f00f6289700) :  INFO (localization:409) - Setting the default locale to en-us
+2016-11-01 02:21:15,650 (7f00f6289700) :  DEBUG (core:450) - Starting messaging component.
+2016-11-01 02:21:15,656 (7f00f6289700) :  DEBUG (core:450) - Starting debugging component.
+2016-11-01 02:21:15,656 (7f00f6289700) :  DEBUG (core:450) - Starting services component.
+2016-11-01 02:21:15,656 (7f00f6289700) :  DEBUG (core:450) - Starting myplex component.
+2016-11-01 02:21:15,656 (7f00f6289700) :  DEBUG (core:450) - Starting notifications component.
+2016-11-01 02:21:15,669 (7f00d6ffd700) :  DEBUG (networking:166) - Requesting 'http://127.0.0.1:32400/system/messaging/clear_events/com.plexapp.agents.lastfm'
+2016-11-01 02:21:15,765 (7f00f6289700) :  DEBUG (accessor:68) - Creating a new model access point for provider com.plexapp.agents.lastfm in namespace 'metadata'
+2016-11-01 02:21:15,768 (7f00f6289700) :  DEBUG (networking:166) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+2016-11-01 02:21:15,914 (7f00f6289700) :  DEBUG (runtime:1117) - Created a thread named 'load_all_services'
+2016-11-01 02:21:15,914 (7f00d6ffd700) :  DEBUG (services:265) - Plug-in is not daemonized - loading services from system
+2016-11-01 02:21:15,914 (7f00d6ffd700) :  DEBUG (networking:166) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/messaging/function/X0J1bmRsZVNlcnZpY2U6QWxsU2VydmljZXM_/Y2VyZWFsMQoxCmxpc3QKMApyMAo_/Y2VyZWFsMQoxCmRpY3QKMApyMAo_'
+2016-11-01 02:21:15,920 (7f00f6289700) :  DEBUG (runtime:1117) - Created a thread named 'get_server_info'
+2016-11-01 02:21:15,920 (7f00f6289700) :  DEBUG (core:150) - Finished starting framework core
+2016-11-01 02:21:15,920 (7f00f6289700) :  DEBUG (core:560) - Loading plug-in code
+2016-11-01 02:21:15,947 (7f00d5ffb700) :  DEBUG (networking:166) - Requesting 'http://127.0.0.1:32400'
+2016-11-01 02:21:15,950 (7f00d5ffb700) :  DEBUG (core:538) - Machine identifier is 3f7d8b45fd54bdb4376458e561943efef8c613f8
+2016-11-01 02:21:15,950 (7f00d5ffb700) :  DEBUG (core:539) - Server version is 1.2.4.2949-4e494e4
+2016-11-01 02:21:16,201 (7f00f6289700) :  DEBUG (core:566) - Finished loading plug-in code
+2016-11-01 02:21:16,201 (7f00f6289700) :  DEBUG (messaging:69) - Exposing function ArtistMbidLookup for remote access
+2016-11-01 02:21:16,202 (7f00f6289700) :  DEBUG (messaging:69) - Exposing function GetMusicBrainzId for remote access
+2016-11-01 02:21:16,202 (7f00f6289700) :  DEBUG (messaging:69) - Exposing function ArtistSearch for remote access
+2016-11-01 02:21:16,203 (7f00f6289700) :  DEBUG (messaging:69) - Exposing function AlbumSearch for remote access
+2016-11-01 02:21:16,203 (7f00f6289700) :  DEBUG (messaging:69) - Exposing function ArtistTopTracks for remote access
+2016-11-01 02:21:16,203 (7f00f6289700) :  DEBUG (messaging:69) - Exposing function ArtistGetSimilar for remote access
+2016-11-01 02:21:16,204 (7f00f6289700) :  DEBUG (messaging:69) - Exposing function ArtistGetEvents for remote access
+2016-11-01 02:21:16,204 (7f00f6289700) :  DEBUG (agentkit:1104) - Creating new agent class called LastFmAgent
+2016-11-01 02:21:16,205 (7f00f6289700) :  DEBUG (agentkit:922) - Updating agent information: [{'media_types': ['Artist'], 'accepts_from': None, 'fallback_agent': None, 'contributes_to': None, 'languages': ['en', 'sv', 'fr', 'es', 'de', 'pl', 'it', 'pt', 'ja', 'tr', 'ru', 'zh'], 'persist_stored_files': True, 'version': 0, 'primary_provider': True, 'prefs': True, 'name': 'Last.fm'}]
+2016-11-01 02:21:16,206 (7f00f6289700) :  DEBUG (networking:166) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/messaging/function/X0FnZW50U2VydmljZTpVcGRhdGVJbmZv/Y2VyZWFsMQoxCmxpc3QKMApyMAo_/Y2VyZWFsMQo1CmRpY3QKbGlzdApkaWN0Cmxpc3QKbGlzdAoyCnMyNQpjb20ucGxleGFwcC5hZ2VudHMubGFzdGZtczEwCmlkZW50aWZpZXJyMQpzMTAKYWdlbnRfaW5mbzEKcjIKMTAKcjMKczExCm1lZGlhX3R5cGVzbnMxMgphY2NlcHRzX2Zyb21uczE0CmZhbGxiYWNrX2FnZW50bnMxNApjb250cmlidXRlc190b3I0CnM5Cmxhbmd1YWdlc2IxczIwCnBlcnNpc3Rfc3RvcmVkX2ZpbGVzaTAKczcKdmVyc2lvbmIxczE2CnByaW1hcnlfcHJvdmlkZXJiMXM1CnByZWZzczcKTGFzdC5mbXM0Cm5hbWUxCnM2CkFydGlzdDEyCnMyCmVuczIKc3ZzMgpmcnMyCmVzczIKZGVzMgpwbHMyCml0czIKcHRzMgpqYXMyCnRyczIKcnVzMgp6aHIwCg__'
+2016-11-01 02:21:16,209 (7f00d6ffd700) :  DEBUG (services:362) - Loaded services
+2016-11-01 02:21:16,211 (7f00d67fc700) :  DEBUG (services:438) - No shared code to load
+2016-11-01 02:21:16,299 (7f00f6289700) :  DEBUG (agentkit:1104) - Creating new agent class called LastFmAlbumAgent
+2016-11-01 02:21:16,300 (7f00f6289700) :  DEBUG (agentkit:922) - Updating agent information: [{'media_types': ['Artist'], 'accepts_from': None, 'fallback_agent': None, 'contributes_to': None, 'languages': ['en', 'sv', 'fr', 'es', 'de', 'pl', 'it', 'pt', 'ja', 'tr', 'ru', 'zh'], 'persist_stored_files': True, 'version': 0, 'primary_provider': True, 'prefs': True, 'name': 'Last.fm'}, {'media_types': ['Album'], 'accepts_from': None, 'fallback_agent': None, 'contributes_to': None, 'languages': ['en', 'sv', 'fr', 'es', 'de', 'pl', 'it', 'pt', 'ja', 'tr', 'ru', 'zh'], 'persist_stored_files': True, 'version': 0, 'primary_provider': True, 'prefs': True, 'name': 'Last.fm'}]
+2016-11-01 02:21:16,300 (7f00f6289700) :  DEBUG (networking:166) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/messaging/function/X0FnZW50U2VydmljZTpVcGRhdGVJbmZv/Y2VyZWFsMQoxCmxpc3QKMApyMAo_/Y2VyZWFsMQo4CmRpY3QKbGlzdApkaWN0Cmxpc3QKbGlzdApkaWN0Cmxpc3QKbGlzdAoyCnMyNQpjb20ucGxleGFwcC5hZ2VudHMubGFzdGZtczEwCmlkZW50aWZpZXJyMQpzMTAKYWdlbnRfaW5mbzIKcjIKcjUKMTAKcjMKczExCm1lZGlhX3R5cGVzbnMxMgphY2NlcHRzX2Zyb21uczE0CmZhbGxiYWNrX2FnZW50bnMxNApjb250cmlidXRlc190b3I0CnM5Cmxhbmd1YWdlc2IxczIwCnBlcnNpc3Rfc3RvcmVkX2ZpbGVzaTAKczcKdmVyc2lvbmIxczE2CnByaW1hcnlfcHJvdmlkZXJiMXM1CnByZWZzczcKTGFzdC5mbXM0Cm5hbWUxCnM2CkFydGlzdDEyCnMyCmVuczIKc3ZzMgpmcnMyCmVzczIKZGVzMgpwbHMyCml0czIKcHRzMgpqYXMyCnRyczIKcnVzMgp6aDEwCnI2CnMxMQptZWRpYV90eXBlc25zMTIKYWNjZXB0c19mcm9tbnMxNApmYWxsYmFja19hZ2VudG5zMTQKY29udHJpYnV0ZXNfdG9yNwpzOQpsYW5ndWFnZXNiMXMyMApwZXJzaXN0X3N0b3JlZF9maWxlc2kwCnM3CnZlcnNpb25iMXMxNgpwcmltYXJ5X3Byb3ZpZGVyYjFzNQpwcmVmc3M3Ckxhc3QuZm1zNApuYW1lMQpzNQpBbGJ1bTEyCnMyCmVuczIKc3ZzMgpmcnMyCmVzczIKZGVzMgpwbHMyCml0czIKcHRzMgpqYXMyCnRyczIKcnVzMgp6aHIwCg__'
+2016-11-01 02:21:16,377 (7f00f6289700) :  INFO (core:611) - Started plug-in
+2016-11-01 02:21:16,377 (7f00f6289700) :  DEBUG (socketinterface:160) - Starting socket server
+2016-11-01 02:21:16,378 (7f00f6289700) :  DEBUG (runtime:1117) - Created a thread named 'start'
+2016-11-01 02:21:16,378 (7f00f6289700) :  INFO (socketinterface:184) - Socket server started on port 38267
+2016-11-01 02:21:16,378 (7f00f6289700) :  INFO (pipeinterface:25) - Entering run loop
+2016-11-01 02:21:16,378 (7f00f6289700) :  DEBUG (runtime:717) - Handling request GET /:/prefixes
+2016-11-01 02:21:16,379 (7f00f6289700) :  DEBUG (runtime:814) - Found route matching /:/prefixes
+2016-11-01 02:21:16,379 (7f00f6289700) :  DEBUG (runtime:924) - Response: [200] MediaContainer, 150 bytes

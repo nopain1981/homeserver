@@ -1,61 +1,47 @@
-2016-10-31 14:27:53,139 (7f080f187700) :  INFO (core:349) - Starting framework core - Version: 2.6.3, Build: 1ff0f18 (Mon Oct 24 21:13:11 UTC 2016)
-2016-10-31 14:27:53,140 (7f080f187700) :  DEBUG (core:361) - Using the standard policy
-2016-10-31 14:27:53,140 (7f080f187700) :  DEBUG (core:450) - Starting runtime component.
-2016-10-31 14:27:53,141 (7f080f187700) :  DEBUG (core:450) - Starting caching component.
-2016-10-31 14:27:53,141 (7f080f187700) :  DEBUG (core:450) - Starting data component.
-2016-10-31 14:27:53,142 (7f080f187700) :  DEBUG (core:450) - Starting networking component.
-2016-10-31 14:27:53,142 (7f080f187700) :  DEBUG (networking:288) - No cookie jar found
-2016-10-31 14:27:53,142 (7f080f187700) :  DEBUG (networking:452) - Setting the default network timeout to 20.0
-2016-10-31 14:27:53,143 (7f080f187700) :  DEBUG (core:450) - Starting localization component.
-2016-10-31 14:27:53,143 (7f080f187700) :  INFO (localization:409) - Setting the default locale to en-us
-2016-10-31 14:27:53,144 (7f080f187700) :  DEBUG (localization:427) - Loaded en strings
-2016-10-31 14:27:53,144 (7f080f187700) :  DEBUG (core:450) - Starting messaging component.
-2016-10-31 14:27:53,144 (7f080f187700) :  DEBUG (core:450) - Starting debugging component.
-2016-10-31 14:27:53,144 (7f080f187700) :  DEBUG (core:450) - Starting services component.
-2016-10-31 14:27:53,145 (7f080f187700) :  DEBUG (core:450) - Starting myplex component.
-2016-10-31 14:27:53,145 (7f080f187700) :  DEBUG (core:450) - Starting notifications component.
-2016-10-31 14:27:53,154 (7f07e7fff700) :  DEBUG (networking:166) - Requesting 'http://127.0.0.1:32400/system/messaging/clear_events/com.plexapp.agents.opensubtitles'
-2016-10-31 14:27:53,235 (7f080f187700) :  DEBUG (accessor:68) - Creating a new model access point for provider com.plexapp.agents.opensubtitles in namespace 'metadata'
-2016-10-31 14:27:53,238 (7f080f187700) :  DEBUG (networking:166) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
-2016-10-31 14:27:53,337 (7f080f187700) :  DEBUG (runtime:1117) - Created a thread named 'load_all_services'
-2016-10-31 14:27:53,337 (7f07e7fff700) :  DEBUG (services:265) - Plug-in is not daemonized - loading services from system
-2016-10-31 14:27:53,338 (7f07e7fff700) :  DEBUG (networking:166) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/messaging/function/X0J1bmRsZVNlcnZpY2U6QWxsU2VydmljZXM_/Y2VyZWFsMQoxCmxpc3QKMApyMAo_/Y2VyZWFsMQoxCmRpY3QKMApyMAo_'
-2016-10-31 14:27:53,350 (7f080f187700) :  DEBUG (runtime:1117) - Created a thread named 'get_server_info'
-2016-10-31 14:27:53,350 (7f080f187700) :  DEBUG (core:150) - Finished starting framework core
-2016-10-31 14:27:53,351 (7f080f187700) :  DEBUG (core:560) - Loading plug-in code
-2016-10-31 14:27:53,361 (7f07e6ffd700) :  DEBUG (networking:166) - Requesting 'http://127.0.0.1:32400'
-2016-10-31 14:27:53,378 (7f07e6ffd700) :  DEBUG (core:538) - Machine identifier is 3f7d8b45fd54bdb4376458e561943efef8c613f8
-2016-10-31 14:27:53,378 (7f07e6ffd700) :  DEBUG (core:539) - Server version is 1.2.3.2914-1ff0f18
-2016-10-31 14:27:53,420 (7f080f187700) :  DEBUG (core:566) - Finished loading plug-in code
-2016-10-31 14:27:53,421 (7f080f187700) :  DEBUG (agentkit:1104) - Creating new agent class called OpenSubtitlesAgentMovies
-2016-10-31 14:27:53,422 (7f080f187700) :  DEBUG (agentkit:922) - Updating agent information: [{'media_types': ['Movie'], 'accepts_from': None, 'fallback_agent': None, 'contributes_to': ['com.plexapp.agents.imdb'], 'languages': ['xn'], 'persist_stored_files': True, 'version': 0, 'primary_provider': False, 'prefs': True, 'name': 'OpenSubtitles.org'}]
-2016-10-31 14:27:53,422 (7f080f187700) :  DEBUG (networking:166) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/messaging/function/X0FnZW50U2VydmljZTpVcGRhdGVJbmZv/Y2VyZWFsMQoxCmxpc3QKMApyMAo_/Y2VyZWFsMQo2CmRpY3QKbGlzdApkaWN0Cmxpc3QKbGlzdApsaXN0CjIKczMyCmNvbS5wbGV4YXBwLmFnZW50cy5vcGVuc3VidGl0bGVzczEwCmlkZW50aWZpZXJyMQpzMTAKYWdlbnRfaW5mbzEKcjIKMTAKcjMKczExCm1lZGlhX3R5cGVzbnMxMgphY2NlcHRzX2Zyb21uczE0CmZhbGxiYWNrX2FnZW50cjQKczE0CmNvbnRyaWJ1dGVzX3RvcjUKczkKbGFuZ3VhZ2VzYjFzMjAKcGVyc2lzdF9zdG9yZWRfZmlsZXNpMApzNwp2ZXJzaW9uYjBzMTYKcHJpbWFyeV9wcm92aWRlcmIxczUKcHJlZnNzMTcKT3BlblN1YnRpdGxlcy5vcmdzNApuYW1lMQpzNQpNb3ZpZTEKczIzCmNvbS5wbGV4YXBwLmFnZW50cy5pbWRiMQpzMgp4bnIwCg__'
-2016-10-31 14:27:53,475 (7f07e7fff700) :  DEBUG (services:362) - Loaded services
-2016-10-31 14:27:53,479 (7f07e77fe700) :  DEBUG (services:438) - No shared code to load
-2016-10-31 14:27:53,489 (7f080f187700) :  DEBUG (agentkit:1104) - Creating new agent class called OpenSubtitlesAgentTV
-2016-10-31 14:27:53,489 (7f080f187700) :  DEBUG (agentkit:922) - Updating agent information: [{'media_types': ['Movie'], 'accepts_from': None, 'fallback_agent': None, 'contributes_to': ['com.plexapp.agents.imdb'], 'languages': ['xn'], 'persist_stored_files': True, 'version': 0, 'primary_provider': False, 'prefs': True, 'name': 'OpenSubtitles.org'}, {'media_types': ['TV_Show'], 'accepts_from': None, 'fallback_agent': None, 'contributes_to': ['com.plexapp.agents.thetvdb'], 'languages': ['xn'], 'persist_stored_files': True, 'version': 0, 'primary_provider': False, 'prefs': True, 'name': 'OpenSubtitles.org'}]
-2016-10-31 14:27:53,490 (7f080f187700) :  DEBUG (networking:166) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/messaging/function/X0FnZW50U2VydmljZTpVcGRhdGVJbmZv/Y2VyZWFsMQoxCmxpc3QKMApyMAo_/Y2VyZWFsMQoxMApkaWN0Cmxpc3QKZGljdApsaXN0Cmxpc3QKbGlzdApkaWN0Cmxpc3QKbGlzdApsaXN0CjIKczMyCmNvbS5wbGV4YXBwLmFnZW50cy5vcGVuc3VidGl0bGVzczEwCmlkZW50aWZpZXJyMQpzMTAKYWdlbnRfaW5mbzIKcjIKcjYKMTAKcjMKczExCm1lZGlhX3R5cGVzbnMxMgphY2NlcHRzX2Zyb21uczE0CmZhbGxiYWNrX2FnZW50cjQKczE0CmNvbnRyaWJ1dGVzX3RvcjUKczkKbGFuZ3VhZ2VzYjFzMjAKcGVyc2lzdF9zdG9yZWRfZmlsZXNpMApzNwp2ZXJzaW9uYjBzMTYKcHJpbWFyeV9wcm92aWRlcmIxczUKcHJlZnNzMTcKT3BlblN1YnRpdGxlcy5vcmdzNApuYW1lMQpzNQpNb3ZpZTEKczIzCmNvbS5wbGV4YXBwLmFnZW50cy5pbWRiMQpzMgp4bjEwCnI3CnMxMQptZWRpYV90eXBlc25zMTIKYWNjZXB0c19mcm9tbnMxNApmYWxsYmFja19hZ2VudHI4CnMxNApjb250cmlidXRlc190b3I5CnM5Cmxhbmd1YWdlc2IxczIwCnBlcnNpc3Rfc3RvcmVkX2ZpbGVzaTAKczcKdmVyc2lvbmIwczE2CnByaW1hcnlfcHJvdmlkZXJiMXM1CnByZWZzczE3Ck9wZW5TdWJ0aXRsZXMub3JnczQKbmFtZTEKczcKVFZfU2hvdzEKczI2CmNvbS5wbGV4YXBwLmFnZW50cy50aGV0dmRiMQpzMgp4bnIwCg__'
-2016-10-31 14:27:53,542 (7f080f187700) :  INFO (datakit:118) - No default dictionary file
-2016-10-31 14:27:53,543 (7f080f187700) :  INFO (datakit:131) - Saved the dictionary file
-2016-10-31 14:27:53,544 (7f080f187700) :  INFO (core:611) - Started plug-in
-2016-10-31 14:27:53,544 (7f080f187700) :  DEBUG (socketinterface:160) - Starting socket server
-2016-10-31 14:27:53,544 (7f080f187700) :  DEBUG (runtime:1117) - Created a thread named 'start'
-2016-10-31 14:27:53,544 (7f080f187700) :  INFO (socketinterface:184) - Socket server started on port 33079
-2016-10-31 14:27:53,545 (7f080f187700) :  INFO (pipeinterface:25) - Entering run loop
-2016-10-31 14:27:53,545 (7f080f187700) :  DEBUG (runtime:717) - Handling request GET /:/prefixes
-2016-10-31 14:27:53,546 (7f080f187700) :  DEBUG (runtime:814) - Found route matching /:/prefixes
-2016-10-31 14:27:53,546 (7f080f187700) :  DEBUG (runtime:924) - Response: [200] MediaContainer, 157 bytes
-2016-10-31 14:28:52,930 (7f07e77fe700) :  DEBUG (runtime:717) - Handling request GET /:/plugins/com.plexapp.agents.opensubtitles/reloadServices
-2016-10-31 14:28:52,944 (7f07e77fe700) :  DEBUG (runtime:814) - Found route matching /:/plugins/com.plexapp.agents.opensubtitles/reloadServices
-2016-10-31 14:28:52,945 (7f07e77fe700) :  DEBUG (services:15) - Reloading services
-2016-10-31 14:28:52,945 (7f07e77fe700) :  DEBUG (services:265) - Plug-in is not daemonized - loading services from system
-2016-10-31 14:28:52,946 (7f07e77fe700) :  DEBUG (networking:166) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/messaging/function/X0J1bmRsZVNlcnZpY2U6QWxsU2VydmljZXM_/Y2VyZWFsMQoxCmxpc3QKMApyMAo_/Y2VyZWFsMQoxCmRpY3QKMApyMAo_'
-2016-10-31 14:28:53,090 (7f07e77fe700) :  DEBUG (services:362) - Loaded services
-2016-10-31 14:28:53,090 (7f07e77fe700) :  DEBUG (runtime:924) - Response: [200] bool, 0 bytes
-2016-10-31 14:28:53,964 (7f07e77fe700) :  DEBUG (runtime:717) - Handling request GET /:/plugins/com.plexapp.agents.opensubtitles/reloadServices
-2016-10-31 14:28:53,965 (7f07e77fe700) :  DEBUG (runtime:814) - Found route matching /:/plugins/com.plexapp.agents.opensubtitles/reloadServices
-2016-10-31 14:28:53,966 (7f07e77fe700) :  DEBUG (services:15) - Reloading services
-2016-10-31 14:28:53,967 (7f07e77fe700) :  DEBUG (services:265) - Plug-in is not daemonized - loading services from system
-2016-10-31 14:28:53,968 (7f07e77fe700) :  DEBUG (networking:166) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/messaging/function/X0J1bmRsZVNlcnZpY2U6QWxsU2VydmljZXM_/Y2VyZWFsMQoxCmxpc3QKMApyMAo_/Y2VyZWFsMQoxCmRpY3QKMApyMAo_'
-2016-10-31 14:28:54,072 (7f07e77fe700) :  DEBUG (services:362) - Loaded services
-2016-10-31 14:28:54,072 (7f07e77fe700) :  DEBUG (runtime:924) - Response: [200] bool, 0 bytes
+2016-11-01 01:55:19,148 (7f4139eb9700) :  INFO (core:349) - Starting framework core - Version: 2.6.3, Build: a68e2fe (Fri Sep 30 01:34:01 UTC 2016)
+2016-11-01 01:55:19,148 (7f4139eb9700) :  DEBUG (core:361) - Using the standard policy
+2016-11-01 01:55:19,148 (7f4139eb9700) :  DEBUG (core:450) - Starting runtime component.
+2016-11-01 01:55:19,176 (7f4139eb9700) :  DEBUG (core:450) - Starting caching component.
+2016-11-01 01:55:19,176 (7f4139eb9700) :  DEBUG (core:450) - Starting data component.
+2016-11-01 01:55:19,176 (7f4139eb9700) :  DEBUG (core:450) - Starting networking component.
+2016-11-01 01:55:19,191 (7f4139eb9700) :  DEBUG (networking:284) - Loaded HTTP cookies
+2016-11-01 01:55:19,192 (7f4139eb9700) :  DEBUG (caching:108) - No info file found, trashing the cache folder
+2016-11-01 01:55:19,192 (7f4139eb9700) :  DEBUG (networking:452) - Setting the default network timeout to 20.0
+2016-11-01 01:55:19,193 (7f4139eb9700) :  DEBUG (core:450) - Starting localization component.
+2016-11-01 01:55:19,193 (7f4139eb9700) :  INFO (localization:409) - Setting the default locale to en-us
+2016-11-01 01:55:19,193 (7f4139eb9700) :  DEBUG (localization:427) - Loaded en strings
+2016-11-01 01:55:19,194 (7f4139eb9700) :  DEBUG (core:450) - Starting messaging component.
+2016-11-01 01:55:19,194 (7f4139eb9700) :  DEBUG (core:450) - Starting debugging component.
+2016-11-01 01:55:19,195 (7f4139eb9700) :  DEBUG (core:450) - Starting services component.
+2016-11-01 01:55:19,195 (7f4139eb9700) :  DEBUG (core:450) - Starting myplex component.
+2016-11-01 01:55:19,195 (7f4139eb9700) :  DEBUG (core:450) - Starting notifications component.
+2016-11-01 01:55:19,201 (7f41167fc700) :  DEBUG (networking:166) - Requesting 'http://127.0.0.1:32400/system/messaging/clear_events/com.plexapp.agents.opensubtitles'
+2016-11-01 01:55:19,282 (7f4139eb9700) :  DEBUG (accessor:68) - Creating a new model access point for provider com.plexapp.agents.opensubtitles in namespace 'metadata'
+2016-11-01 01:55:19,286 (7f4139eb9700) :  DEBUG (networking:166) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+2016-11-01 01:55:19,372 (7f4139eb9700) :  DEBUG (runtime:1117) - Created a thread named 'load_all_services'
+2016-11-01 01:55:19,372 (7f41167fc700) :  DEBUG (services:265) - Plug-in is not daemonized - loading services from system
+2016-11-01 01:55:19,373 (7f41167fc700) :  DEBUG (networking:166) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/messaging/function/X0J1bmRsZVNlcnZpY2U6QWxsU2VydmljZXM_/Y2VyZWFsMQoxCmxpc3QKMApyMAo_/Y2VyZWFsMQoxCmRpY3QKMApyMAo_'
+2016-11-01 01:55:19,380 (7f4139eb9700) :  DEBUG (runtime:1117) - Created a thread named 'get_server_info'
+2016-11-01 01:55:19,380 (7f4139eb9700) :  DEBUG (core:150) - Finished starting framework core
+2016-11-01 01:55:19,380 (7f4139eb9700) :  DEBUG (core:560) - Loading plug-in code
+2016-11-01 01:55:19,390 (7f41157fa700) :  DEBUG (networking:166) - Requesting 'http://127.0.0.1:32400'
+2016-11-01 01:55:19,393 (7f41157fa700) :  DEBUG (core:538) - Machine identifier is 3f7d8b45fd54bdb4376458e561943efef8c613f8
+2016-11-01 01:55:19,393 (7f41157fa700) :  DEBUG (core:539) - Server version is 1.2.0.2838-a68e2fe
+2016-11-01 01:55:19,459 (7f4139eb9700) :  DEBUG (core:566) - Finished loading plug-in code
+2016-11-01 01:55:19,460 (7f4139eb9700) :  DEBUG (agentkit:1115) - Creating new agent class called OpenSubtitlesAgentMovies
+2016-11-01 01:55:19,460 (7f4139eb9700) :  DEBUG (agentkit:933) - Updating agent information: [{'media_types': ['Movie'], 'accepts_from': None, 'fallback_agent': None, 'contributes_to': ['com.plexapp.agents.imdb'], 'languages': ['xn'], 'persist_stored_files': True, 'version': 0, 'primary_provider': False, 'prefs': True, 'name': 'OpenSubtitles.org'}]
+2016-11-01 01:55:19,463 (7f4139eb9700) :  DEBUG (networking:166) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/messaging/function/X0FnZW50U2VydmljZTpVcGRhdGVJbmZv/Y2VyZWFsMQoxCmxpc3QKMApyMAo_/Y2VyZWFsMQo2CmRpY3QKbGlzdApkaWN0Cmxpc3QKbGlzdApsaXN0CjIKczMyCmNvbS5wbGV4YXBwLmFnZW50cy5vcGVuc3VidGl0bGVzczEwCmlkZW50aWZpZXJyMQpzMTAKYWdlbnRfaW5mbzEKcjIKMTAKcjMKczExCm1lZGlhX3R5cGVzbnMxMgphY2NlcHRzX2Zyb21uczE0CmZhbGxiYWNrX2FnZW50cjQKczE0CmNvbnRyaWJ1dGVzX3RvcjUKczkKbGFuZ3VhZ2VzYjFzMjAKcGVyc2lzdF9zdG9yZWRfZmlsZXNpMApzNwp2ZXJzaW9uYjBzMTYKcHJpbWFyeV9wcm92aWRlcmIxczUKcHJlZnNzMTcKT3BlblN1YnRpdGxlcy5vcmdzNApuYW1lMQpzNQpNb3ZpZTEKczIzCmNvbS5wbGV4YXBwLmFnZW50cy5pbWRiMQpzMgp4bnIwCg__'
+2016-11-01 01:55:19,753 (7f41167fc700) :  DEBUG (services:362) - Loaded services
+2016-11-01 01:55:19,756 (7f4115ffb700) :  DEBUG (services:438) - No shared code to load
+2016-11-01 01:55:19,828 (7f4139eb9700) :  DEBUG (agentkit:1115) - Creating new agent class called OpenSubtitlesAgentTV
+2016-11-01 01:55:19,828 (7f4139eb9700) :  DEBUG (agentkit:933) - Updating agent information: [{'media_types': ['Movie'], 'accepts_from': None, 'fallback_agent': None, 'contributes_to': ['com.plexapp.agents.imdb'], 'languages': ['xn'], 'persist_stored_files': True, 'version': 0, 'primary_provider': False, 'prefs': True, 'name': 'OpenSubtitles.org'}, {'media_types': ['TV_Show'], 'accepts_from': None, 'fallback_agent': None, 'contributes_to': ['com.plexapp.agents.thetvdb'], 'languages': ['xn'], 'persist_stored_files': True, 'version': 0, 'primary_provider': False, 'prefs': True, 'name': 'OpenSubtitles.org'}]
+2016-11-01 01:55:19,828 (7f4139eb9700) :  DEBUG (networking:166) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/messaging/function/X0FnZW50U2VydmljZTpVcGRhdGVJbmZv/Y2VyZWFsMQoxCmxpc3QKMApyMAo_/Y2VyZWFsMQoxMApkaWN0Cmxpc3QKZGljdApsaXN0Cmxpc3QKbGlzdApkaWN0Cmxpc3QKbGlzdApsaXN0CjIKczMyCmNvbS5wbGV4YXBwLmFnZW50cy5vcGVuc3VidGl0bGVzczEwCmlkZW50aWZpZXJyMQpzMTAKYWdlbnRfaW5mbzIKcjIKcjYKMTAKcjMKczExCm1lZGlhX3R5cGVzbnMxMgphY2NlcHRzX2Zyb21uczE0CmZhbGxiYWNrX2FnZW50cjQKczE0CmNvbnRyaWJ1dGVzX3RvcjUKczkKbGFuZ3VhZ2VzYjFzMjAKcGVyc2lzdF9zdG9yZWRfZmlsZXNpMApzNwp2ZXJzaW9uYjBzMTYKcHJpbWFyeV9wcm92aWRlcmIxczUKcHJlZnNzMTcKT3BlblN1YnRpdGxlcy5vcmdzNApuYW1lMQpzNQpNb3ZpZTEKczIzCmNvbS5wbGV4YXBwLmFnZW50cy5pbWRiMQpzMgp4bjEwCnI3CnMxMQptZWRpYV90eXBlc25zMTIKYWNjZXB0c19mcm9tbnMxNApmYWxsYmFja19hZ2VudHI4CnMxNApjb250cmlidXRlc190b3I5CnM5Cmxhbmd1YWdlc2IxczIwCnBlcnNpc3Rfc3RvcmVkX2ZpbGVzaTAKczcKdmVyc2lvbmIwczE2CnByaW1hcnlfcHJvdmlkZXJiMXM1CnByZWZzczE3Ck9wZW5TdWJ0aXRsZXMub3JnczQKbmFtZTEKczcKVFZfU2hvdzEKczI2CmNvbS5wbGV4YXBwLmFnZW50cy50aGV0dmRiMQpzMgp4bnIwCg__'
+2016-11-01 01:55:19,849 (7f4139eb9700) :  INFO (datakit:93) - Loaded the dictionary file
+2016-11-01 01:55:19,849 (7f4139eb9700) :  INFO (core:611) - Started plug-in
+2016-11-01 01:55:19,849 (7f4139eb9700) :  DEBUG (socketinterface:160) - Starting socket server
+2016-11-01 01:55:19,849 (7f4139eb9700) :  DEBUG (runtime:1117) - Created a thread named 'start'
+2016-11-01 01:55:19,849 (7f4139eb9700) :  INFO (socketinterface:184) - Socket server started on port 46579
+2016-11-01 01:55:19,850 (7f4139eb9700) :  INFO (pipeinterface:25) - Entering run loop
+2016-11-01 01:55:19,850 (7f4139eb9700) :  DEBUG (runtime:717) - Handling request GET /:/prefixes
+2016-11-01 01:55:19,851 (7f4139eb9700) :  DEBUG (runtime:814) - Found route matching /:/prefixes
+2016-11-01 01:55:19,851 (7f4139eb9700) :  DEBUG (runtime:924) - Response: [200] MediaContainer, 157 bytes
