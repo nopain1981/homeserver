@@ -389,3 +389,4 @@
 2016-11-01 02:23:14,680 (7f5724ff9700) :  DEBUG (runtime:1117) - Created a thread named 'background_refresh'
 2016-11-01 02:23:14,680 (7f570effd700) :  DEBUG (peerservice:189) - Updating servers (False/True True/True/True)
 2016-11-01 02:23:14,681 (7f570effd700) :  DEBUG (peerservice:198) - Found 1 servers
+2016-11-01 03:21:14,672 (7f570f7fe700) :  DEBUG (runtime:1156) - Starting timed thread named 'invalidation_timer'

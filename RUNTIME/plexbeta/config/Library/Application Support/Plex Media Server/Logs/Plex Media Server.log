@@ -1767,3 +1767,507 @@ Nov 01, 2016 03:09:45.223 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink inf
 Nov 01, 2016 03:09:45.223 [0x7f90833fc700] DEBUG - Network change.
 Nov 01, 2016 03:09:45.223 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
 Nov 01, 2016 03:09:45.223 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:10:28.613 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=312, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:10:28.613 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=7, type=1, index=34, flags=0x1003, change=0x0
+Nov 01, 2016 03:10:28.613 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:10:28.613 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:10:28.613 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:10:28.613 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=312, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:10:28.613 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=7, type=1, index=34, flags=0x1003, change=0x0
+Nov 01, 2016 03:10:28.613 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:10:28.613 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:10:28.614 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:10:28.614 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1496, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:10:28.614 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=34, flags=0x1003, change=0x0
+Nov 01, 2016 03:10:28.614 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:10:28.614 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:10:28.641 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:10:28.641 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1260, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:10:28.641 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=33, flags=0x1002, change=0xffffffff
+Nov 01, 2016 03:10:28.641 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:10:28.641 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:10:28.641 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:10:29.111 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1488, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:10:29.111 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=34, flags=0x1002, change=0x41
+Nov 01, 2016 03:10:29.111 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:10:29.111 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:10:29.119 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:10:29.119 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=312, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:10:29.119 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=7, type=1, index=34, flags=0x1002, change=0x0
+Nov 01, 2016 03:10:29.119 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:10:29.119 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:10:29.119 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:10:29.119 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=312, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:10:29.119 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=7, type=1, index=34, flags=0x1002, change=0x0
+Nov 01, 2016 03:10:29.119 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:10:29.119 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:10:29.119 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:10:29.119 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=548, type=RTM_DELLINK, flags=0x0
+Nov 01, 2016 03:10:29.119 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=33, flags=0x1002, change=0xffffffff
+Nov 01, 2016 03:10:29.119 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=312, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:10:29.119 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=7, type=1, index=34, flags=0x1002, change=0x0
+Nov 01, 2016 03:10:29.119 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:10:29.119 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:10:29.119 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:10:29.119 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=104, type=RTM_DELLINK, flags=0x0
+Nov 01, 2016 03:10:29.119 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=7, type=1, index=34, flags=0x1002, change=0x0
+Nov 01, 2016 03:10:29.119 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1616, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:10:29.119 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=4, flags=0x1043, change=0x0
+Nov 01, 2016 03:10:29.119 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:10:29.119 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:10:29.119 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:10:29.119 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=548, type=RTM_DELLINK, flags=0x0
+Nov 01, 2016 03:10:29.119 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=34, flags=0x1002, change=0xffffffff
+Nov 01, 2016 03:10:29.615 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1616, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:10:29.615 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=4, flags=0x1003, change=0x0
+Nov 01, 2016 03:10:29.615 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:10:29.615 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:10:29.615 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:11:08.845 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1260, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:11:08.845 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=35, flags=0x1002, change=0xffffffff
+Nov 01, 2016 03:11:08.845 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:11:08.845 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:11:08.847 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:11:08.847 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1260, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:11:08.847 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=36, flags=0x1002, change=0xffffffff
+Nov 01, 2016 03:11:08.847 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:11:08.847 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:11:08.847 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:11:08.847 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1260, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:11:08.847 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=36, flags=0x1002, change=0x0
+Nov 01, 2016 03:11:08.847 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:11:08.847 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:11:08.847 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:11:08.847 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1488, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:11:08.847 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=36, flags=0x1002, change=0x0
+Nov 01, 2016 03:11:08.847 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:11:08.847 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:11:08.847 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:11:08.847 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1488, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:11:08.847 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=36, flags=0x1002, change=0x100
+Nov 01, 2016 03:11:08.847 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:11:08.847 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:11:08.847 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:11:08.847 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1616, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:11:08.847 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=4, flags=0x1003, change=0x0
+Nov 01, 2016 03:11:08.847 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:11:08.847 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:11:08.847 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:11:08.847 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=312, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:11:08.847 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=7, type=1, index=36, flags=0x1002, change=0x0
+Nov 01, 2016 03:11:08.847 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:11:08.847 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:11:08.847 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:11:08.847 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1260, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:11:08.847 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=35, flags=0x1002, change=0x0
+Nov 01, 2016 03:11:08.847 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:11:08.847 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:11:08.847 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:11:08.847 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1488, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:11:08.847 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=36, flags=0x1003, change=0x1
+Nov 01, 2016 03:11:08.847 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:11:08.847 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:11:08.847 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:11:08.847 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=312, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:11:08.847 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=7, type=1, index=36, flags=0x1003, change=0x0
+Nov 01, 2016 03:11:08.847 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:11:08.847 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:11:08.848 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:11:09.675 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=548, type=RTM_DELLINK, flags=0x0
+Nov 01, 2016 03:11:09.675 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=35, flags=0x1002, change=0xffffffff
+Nov 01, 2016 03:11:09.686 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=312, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:11:09.686 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=7, type=1, index=36, flags=0x11043, change=0x0
+Nov 01, 2016 03:11:09.686 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:11:09.686 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:11:09.686 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:11:09.686 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=312, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:11:09.686 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=7, type=1, index=36, flags=0x11043, change=0x0
+Nov 01, 2016 03:11:09.686 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:11:09.686 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:11:09.686 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:11:09.686 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=312, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:11:09.686 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=7, type=1, index=36, flags=0x11043, change=0x0
+Nov 01, 2016 03:11:09.686 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:11:09.686 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:11:09.686 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:11:09.686 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1496, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:11:09.686 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=36, flags=0x11043, change=0x0
+Nov 01, 2016 03:11:09.686 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:11:09.686 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:11:09.687 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:11:09.687 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1616, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:11:09.687 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=4, flags=0x11043, change=0x0
+Nov 01, 2016 03:11:09.687 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:11:09.687 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:11:09.687 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:11:09.861 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=312, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:11:09.861 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=7, type=1, index=36, flags=0x1003, change=0x0
+Nov 01, 2016 03:11:09.861 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:11:09.861 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:11:09.861 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:11:09.861 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=312, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:11:09.862 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=7, type=1, index=36, flags=0x1003, change=0x0
+Nov 01, 2016 03:11:09.862 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:11:09.862 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:11:09.862 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:11:09.862 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1496, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:11:09.862 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=36, flags=0x1003, change=0x0
+Nov 01, 2016 03:11:09.862 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:11:09.862 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:11:09.862 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:11:09.889 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1260, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:11:09.889 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=35, flags=0x1002, change=0xffffffff
+Nov 01, 2016 03:11:09.889 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:11:09.889 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:11:09.889 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:11:10.259 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1488, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:11:10.259 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=36, flags=0x1002, change=0x41
+Nov 01, 2016 03:11:10.259 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:11:10.259 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:11:10.264 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:11:10.264 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=312, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:11:10.264 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=7, type=1, index=36, flags=0x1002, change=0x0
+Nov 01, 2016 03:11:10.264 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:11:10.264 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:11:10.264 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:11:10.264 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=312, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:11:10.264 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=7, type=1, index=36, flags=0x1002, change=0x0
+Nov 01, 2016 03:11:10.264 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:11:10.264 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:11:10.264 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:11:10.264 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=548, type=RTM_DELLINK, flags=0x0
+Nov 01, 2016 03:11:10.264 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=35, flags=0x1002, change=0xffffffff
+Nov 01, 2016 03:11:10.264 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=312, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:11:10.264 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=7, type=1, index=36, flags=0x1002, change=0x0
+Nov 01, 2016 03:11:10.264 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:11:10.264 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:11:10.264 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:11:10.264 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=104, type=RTM_DELLINK, flags=0x0
+Nov 01, 2016 03:11:10.264 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=7, type=1, index=36, flags=0x1002, change=0x0
+Nov 01, 2016 03:11:10.264 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1616, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:11:10.264 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=4, flags=0x1043, change=0x0
+Nov 01, 2016 03:11:10.264 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:11:10.264 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:11:10.264 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:11:10.264 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=548, type=RTM_DELLINK, flags=0x0
+Nov 01, 2016 03:11:10.264 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=36, flags=0x1002, change=0xffffffff
+Nov 01, 2016 03:11:10.863 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1616, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:11:10.863 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=4, flags=0x1003, change=0x0
+Nov 01, 2016 03:11:10.863 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:11:10.863 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:11:10.863 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:06.555 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1260, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:06.555 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=37, flags=0x1002, change=0xffffffff
+Nov 01, 2016 03:12:06.555 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:06.555 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:06.555 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:06.555 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1260, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:06.555 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=38, flags=0x1002, change=0xffffffff
+Nov 01, 2016 03:12:06.555 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:06.555 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:06.556 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:06.556 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1260, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:06.556 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=38, flags=0x1002, change=0x0
+Nov 01, 2016 03:12:06.556 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:06.556 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:06.556 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:06.556 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1488, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:06.556 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=38, flags=0x1002, change=0x0
+Nov 01, 2016 03:12:06.556 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:06.556 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:06.556 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:06.556 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1488, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:06.556 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=38, flags=0x1002, change=0x100
+Nov 01, 2016 03:12:06.556 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:06.556 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:06.557 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:06.557 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1616, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:06.557 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=4, flags=0x1003, change=0x0
+Nov 01, 2016 03:12:06.557 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:06.557 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:06.557 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:06.557 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=312, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:06.557 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=7, type=1, index=38, flags=0x1002, change=0x0
+Nov 01, 2016 03:12:06.557 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:06.557 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:06.557 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:06.557 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1260, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:06.557 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=37, flags=0x1002, change=0x0
+Nov 01, 2016 03:12:06.557 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:06.557 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:06.557 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:06.557 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1488, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:06.557 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=38, flags=0x1003, change=0x1
+Nov 01, 2016 03:12:06.557 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:06.557 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:06.557 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:06.557 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=312, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:06.557 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=7, type=1, index=38, flags=0x1003, change=0x0
+Nov 01, 2016 03:12:06.557 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:06.557 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:06.558 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:07.099 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=548, type=RTM_DELLINK, flags=0x0
+Nov 01, 2016 03:12:07.099 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=37, flags=0x1002, change=0xffffffff
+Nov 01, 2016 03:12:07.110 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=312, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:07.110 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=7, type=1, index=38, flags=0x11043, change=0x0
+Nov 01, 2016 03:12:07.110 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:07.110 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:07.110 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:07.110 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=312, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:07.110 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=7, type=1, index=38, flags=0x11043, change=0x0
+Nov 01, 2016 03:12:07.110 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:07.110 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:07.110 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:07.110 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=312, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:07.110 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=7, type=1, index=38, flags=0x11043, change=0x0
+Nov 01, 2016 03:12:07.110 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:07.110 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:07.110 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:07.110 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1496, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:07.110 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=38, flags=0x11043, change=0x0
+Nov 01, 2016 03:12:07.110 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:07.110 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:07.110 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:07.110 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1616, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:07.110 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=4, flags=0x11043, change=0x0
+Nov 01, 2016 03:12:07.110 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:07.110 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:07.110 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:11.472 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=312, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:11.472 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=7, type=1, index=38, flags=0x1003, change=0x0
+Nov 01, 2016 03:12:11.472 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:11.472 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:11.472 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:11.472 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=312, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:11.472 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=7, type=1, index=38, flags=0x1003, change=0x0
+Nov 01, 2016 03:12:11.472 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:11.472 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:11.472 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:11.472 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1496, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:11.472 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=38, flags=0x1003, change=0x0
+Nov 01, 2016 03:12:11.472 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:11.472 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:11.472 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:11.490 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1260, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:11.490 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=37, flags=0x1002, change=0xffffffff
+Nov 01, 2016 03:12:11.490 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:11.490 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:11.490 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:11.970 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1488, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:11.970 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=38, flags=0x1002, change=0x41
+Nov 01, 2016 03:12:11.970 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:11.970 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:11.981 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:11.981 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=312, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:11.981 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=7, type=1, index=38, flags=0x1002, change=0x0
+Nov 01, 2016 03:12:11.981 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:11.981 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:11.981 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:11.981 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=312, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:11.981 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=7, type=1, index=38, flags=0x1002, change=0x0
+Nov 01, 2016 03:12:11.981 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:11.981 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:11.981 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:11.981 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=548, type=RTM_DELLINK, flags=0x0
+Nov 01, 2016 03:12:11.981 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=37, flags=0x1002, change=0xffffffff
+Nov 01, 2016 03:12:11.981 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=312, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:11.981 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=7, type=1, index=38, flags=0x1002, change=0x0
+Nov 01, 2016 03:12:11.981 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:11.981 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:11.981 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:11.981 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=104, type=RTM_DELLINK, flags=0x0
+Nov 01, 2016 03:12:11.981 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=7, type=1, index=38, flags=0x1002, change=0x0
+Nov 01, 2016 03:12:11.981 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1616, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:11.981 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=4, flags=0x1043, change=0x0
+Nov 01, 2016 03:12:11.981 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:11.981 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:11.981 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:11.981 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=548, type=RTM_DELLINK, flags=0x0
+Nov 01, 2016 03:12:11.981 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=38, flags=0x1002, change=0xffffffff
+Nov 01, 2016 03:12:12.475 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1616, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:12.475 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=4, flags=0x1003, change=0x0
+Nov 01, 2016 03:12:12.475 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:12.475 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:12.475 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:39.502 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1260, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:39.502 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=39, flags=0x1002, change=0xffffffff
+Nov 01, 2016 03:12:39.502 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:39.502 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:39.503 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:39.503 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1260, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:39.503 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=40, flags=0x1002, change=0xffffffff
+Nov 01, 2016 03:12:39.503 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:39.503 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:39.503 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:39.503 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1260, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:39.503 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=40, flags=0x1002, change=0x0
+Nov 01, 2016 03:12:39.503 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:39.503 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:39.503 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:39.503 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1488, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:39.503 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=40, flags=0x1002, change=0x0
+Nov 01, 2016 03:12:39.503 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:39.503 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:39.503 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:39.503 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1488, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:39.503 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=40, flags=0x1002, change=0x100
+Nov 01, 2016 03:12:39.503 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:39.503 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:39.503 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:39.504 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1616, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:39.504 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=4, flags=0x1003, change=0x0
+Nov 01, 2016 03:12:39.504 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:39.504 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:39.504 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:39.504 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=312, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:39.504 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=7, type=1, index=40, flags=0x1002, change=0x0
+Nov 01, 2016 03:12:39.504 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:39.504 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:39.504 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:39.504 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1260, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:39.504 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=39, flags=0x1002, change=0x0
+Nov 01, 2016 03:12:39.504 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:39.504 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:39.504 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:39.504 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1488, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:39.504 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=40, flags=0x1043, change=0x1
+Nov 01, 2016 03:12:39.504 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:39.504 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:39.504 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:39.504 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=312, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:39.504 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=7, type=1, index=40, flags=0x1043, change=0x0
+Nov 01, 2016 03:12:39.504 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:39.504 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:39.504 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:39.504 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=312, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:39.504 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=7, type=1, index=40, flags=0x1043, change=0x0
+Nov 01, 2016 03:12:39.504 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:39.504 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:39.504 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:39.504 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=312, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:39.504 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=7, type=1, index=40, flags=0x1043, change=0x0
+Nov 01, 2016 03:12:39.504 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:39.504 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:39.504 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:39.504 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=312, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:39.504 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=7, type=1, index=40, flags=0x1003, change=0x0
+Nov 01, 2016 03:12:39.504 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:39.504 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:39.504 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:39.505 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=312, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:39.505 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=7, type=1, index=40, flags=0x1003, change=0x0
+Nov 01, 2016 03:12:39.505 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:39.505 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:39.505 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:39.505 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1488, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:39.505 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=40, flags=0x1003, change=0x0
+Nov 01, 2016 03:12:39.505 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:39.505 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:39.505 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:39.505 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1616, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:39.505 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=4, flags=0x1003, change=0x0
+Nov 01, 2016 03:12:39.505 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:39.505 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:39.505 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:40.149 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=548, type=RTM_DELLINK, flags=0x0
+Nov 01, 2016 03:12:40.149 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=39, flags=0x1002, change=0xffffffff
+Nov 01, 2016 03:12:40.160 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=312, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:40.160 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=7, type=1, index=40, flags=0x11043, change=0x0
+Nov 01, 2016 03:12:40.160 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:40.160 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:40.160 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:40.160 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=312, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:40.160 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=7, type=1, index=40, flags=0x11043, change=0x0
+Nov 01, 2016 03:12:40.160 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:40.160 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:40.160 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:40.160 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=312, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:40.160 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=7, type=1, index=40, flags=0x11043, change=0x0
+Nov 01, 2016 03:12:40.160 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:40.160 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:40.160 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:40.160 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1496, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:40.160 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=40, flags=0x11043, change=0x0
+Nov 01, 2016 03:12:40.160 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:40.160 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:40.160 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:40.160 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1616, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:40.160 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=4, flags=0x11043, change=0x0
+Nov 01, 2016 03:12:40.160 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:40.160 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:40.160 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:40.534 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=312, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:40.534 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=7, type=1, index=40, flags=0x1003, change=0x0
+Nov 01, 2016 03:12:40.534 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:40.534 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:40.535 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:40.535 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=312, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:40.535 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=7, type=1, index=40, flags=0x1003, change=0x0
+Nov 01, 2016 03:12:40.535 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:40.535 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:40.535 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:40.535 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1496, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:40.535 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=40, flags=0x1003, change=0x0
+Nov 01, 2016 03:12:40.535 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:40.535 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:40.535 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:40.554 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1260, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:40.554 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=39, flags=0x1002, change=0xffffffff
+Nov 01, 2016 03:12:40.554 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:40.554 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:40.554 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:41.023 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1488, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:41.023 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=40, flags=0x1002, change=0x41
+Nov 01, 2016 03:12:41.023 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:41.023 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:41.030 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:41.030 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=312, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:41.030 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=7, type=1, index=40, flags=0x1002, change=0x0
+Nov 01, 2016 03:12:41.030 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:41.030 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:41.030 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:41.030 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=312, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:41.030 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=7, type=1, index=40, flags=0x1002, change=0x0
+Nov 01, 2016 03:12:41.030 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:41.030 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:41.030 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:41.030 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=548, type=RTM_DELLINK, flags=0x0
+Nov 01, 2016 03:12:41.030 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=39, flags=0x1002, change=0xffffffff
+Nov 01, 2016 03:12:41.030 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=312, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:41.030 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=7, type=1, index=40, flags=0x1002, change=0x0
+Nov 01, 2016 03:12:41.030 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:41.030 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:41.030 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:41.030 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=104, type=RTM_DELLINK, flags=0x0
+Nov 01, 2016 03:12:41.030 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=7, type=1, index=40, flags=0x1002, change=0x0
+Nov 01, 2016 03:12:41.030 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1616, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:41.030 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=4, flags=0x1043, change=0x0
+Nov 01, 2016 03:12:41.030 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:41.030 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:41.030 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:12:41.030 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=548, type=RTM_DELLINK, flags=0x0
+Nov 01, 2016 03:12:41.030 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=40, flags=0x1002, change=0xffffffff
+Nov 01, 2016 03:12:41.535 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=1616, type=RTM_NEWLINK, flags=0x0
+Nov 01, 2016 03:12:41.535 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=4, flags=0x1003, change=0x0
+Nov 01, 2016 03:12:41.535 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:12:41.535 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:12:41.535 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:21:13.214 [0x7f90893ff700] DEBUG - Sync: uploadStatus
+Nov 01, 2016 03:21:14.908 [0x7f90893ff700] DEBUG - PublicAddressManager: Obtaining public address and mapping port.
+Nov 01, 2016 03:21:14.908 [0x7f907abf3700] DEBUG - PublicAddressManager: Obtaining public IP.
+Nov 01, 2016 03:21:14.922 [0x7f907abf3700] DEBUG - HTTP requesting GET http://plex.tv/pms/:/ip
+Nov 01, 2016 03:21:15.033 [0x7f907abf3700] DEBUG - HTTP 200 response from GET http://plex.tv/pms/:/ip
+Nov 01, 2016 03:21:15.056 [0x7f907abf3700] DEBUG - PublicAddressManager: Got public IP from http://plex.tv: 178.83.170.186
+Nov 01, 2016 03:21:27.078 [0x7f907abf3700] DEBUG - NAT: UPnP, getPublicIP didn't find usable IGD.
+Nov 01, 2016 03:21:27.329 [0x7f907abf3700] WARN - NAT: PMP, got an error: Not Supported by gateway.
+Nov 01, 2016 03:24:47.731 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=88, type=RTM_DELADDR, flags=0x0
+Nov 01, 2016 03:24:47.731 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink address message family=2, index=3, flags=0x0
+Nov 01, 2016 03:24:47.731 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:24:47.731 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:24:47.731 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:48:02.219 [0x7f90833fc700] DEBUG - NetworkInterface: received Netlink message len=88, type=RTM_DELADDR, flags=0x0
+Nov 01, 2016 03:48:02.219 [0x7f90833fc700] DEBUG - NetworkInterface: Netlink address message family=2, index=3, flags=0x0
+Nov 01, 2016 03:48:02.219 [0x7f90833fc700] DEBUG - Network change.
+Nov 01, 2016 03:48:02.219 [0x7f90833fc700] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Nov 01, 2016 03:48:02.219 [0x7f90833fc700] DEBUG - Network change notification but nothing changed.
+Nov 01, 2016 03:51:13.215 [0x7f90893ff700] DEBUG - Sync: uploadStatus
