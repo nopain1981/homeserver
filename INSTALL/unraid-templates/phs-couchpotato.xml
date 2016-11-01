@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>couchpotato</Name>
+  <Name>phs-couchpotato</Name>
   <Repository>nopain1981/couchpotato</Repository>
   <Registry>https://registry.hub.docker.com/u/nopain1981/couchpotato/</Registry>
   <Network>bridge</Network>
