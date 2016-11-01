@@ -1,6 +1,0 @@
-#######################################################
-# Update routine will not run because you havent set  #
-# the VERSION variable or you opted out of updates.   #
-#          For more information checkout :-           #
-#    https://github.com/linuxserver/docker-plex       #
-#######################################################
