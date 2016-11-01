@@ -26,4 +26,4 @@ fi
 
 # run SickRage
 echo "[INFO] Launching SickRage ..."
-gosu $PUSER:$PGROUP bash -c "/usr/bin/python $SR_HOME/app/SickBeard.py --quiet --nolaunch --datadir /config/data --config /config/sickbeard.ini"
+gosu $PUSER:$PGROUP bash -c "/usr/bin/python $SR_HOME/app/SickBeard.py --quiet --nolaunch --datadir /config --config /config/sickbeard.ini"
