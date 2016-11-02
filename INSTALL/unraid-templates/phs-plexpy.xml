@@ -35,5 +35,5 @@
   </Data>
   <Environment/>
   <Config Name="Host Path 1" Target="/data" Default="/mnt/user/docker/plexpy/data/" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/docker/plexpy/data</Config>
-  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/docker/plexpy/config" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/docker/plexpy/config</Config>
+  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/docker/plexpy/config" Mode="rw" Description="Container Path: /config" Type="Path"  Display="always" Required="true" Mask="false">/mnt/user/docker/plexpy/config</Config>
 </Container>
