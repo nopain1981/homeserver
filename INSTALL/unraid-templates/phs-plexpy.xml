@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>phs.plexpy</Name>
+  <Repository>nopain1981/plexpy</Repository>
+  <Registry>https://registry.hub.docker.com/u/nopain1981/plexpy/</Registry>
+  <Network>host</Network>
+  <Privileged>false</Privileged>
+  <Overview>&#xD;
+		This Template is used for plexpy[br]&#xD;
+  </Overview>
+  <Category>MediaServer:Video</Category>
+  <WebUI>http://[IP]:[PORT:8181]/web</WebUI>
+  <TemplateURL/>
+  <Icon>https://bitbucket-assetroot.s3.amazonaws.com/c/photos/2015/Dec/03/1706573140-9-plexivity-logo_avatar.png</Icon>
+  <ExtraParams/>
+  <DateInstalled>1477228315</DateInstalled>
+  <Description>&#xD;
+		This Template is used for plexpy[br]&#xD;
+  </Description>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/docker/plexpy/data</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/docker/plexpy/config</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Config Name="Host Path 1" Target="/data" Default="/mnt/user/docker/plexpy/data/" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/docker/plexpy/data</Config>
+  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/docker/plexpy/config" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/docker/plexpy/config</Config>
+</Container>
