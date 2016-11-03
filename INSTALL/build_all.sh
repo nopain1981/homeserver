@@ -19,16 +19,18 @@ docker ps -a | awk {'print $1'} | xargs docker kill
 docker ps -a | awk {'print $1'} | xargs docker rm
 docker images | awk {'print $3'} | xargs docker rmi -f
 
-./compile.and.create.sh ark 1234:1234
-./compile.and.create.sh couchpotato 5050:5050
-./compile.and.create.sh headphones 5053:5053
-./compile.and.create.sh jd2 8080:8080
-./compile.and.create.sh noip 1234:1234
-./compile.and.create.sh oscam 1337:1337
-./compile.and.create.sh plex 32400:32400
-./compile.and.create.sh plexpy 8181:8181
-./compile.and.create.sh sabnzbd 5051:5051
-#./compile.and.create.sh sickbeard 5055:5055
-./compile.and.create.sh sickrage 5055:5055
-./compile.and.create.sh sonarr 8989:8989
-./compile.and.create.sh tvheadend 9981:9981
+CCSH=/playground/homeserver/INSTALL/compile.and.create.sh
+
+$CCSH ark 1234:1234
+$CCSH couchpotato 5050:5050
+$CCSH headphones 5053:5053
+$CCSH jd2 8080:8080
+$CCSH noip 1234:1234
+$CCSH oscam 1337:1337
+$CCSH plex 32400:32400
+$CCSH plexpy 8181:8181
+$CCSH sabnzbd 5051:5051
+#$CCSH sickbeard 5055:5055
+$CCSH sickrage 5055:5055
+$CCSH sonarr 8989:8989
+$CCSH tvheadend 9981:9981
