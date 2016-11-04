@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>phs.ark</Name>
+  <Repository>nopain1981/ark</Repository>
+  <Registry>https://registry.hub.docker.com/u/nopain1981/ark</Registry>
+  <Network>host</Network>
+  <Privileged>true</Privileged>
+  <Support/>
+  <Overview>[br] &#xD;
+Ark Gaming Server</Overview>
+  <Category>Backup:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>http://www.kpheasey.com/wp-content/uploads/2015/07/ARK_LOGO1.jpg</Icon>
+  <ExtraParams/>
+  <DateInstalled>1478220511</DateInstalled>
+  <Description>[br] &#xD;
+Ark Gaming Server</Description>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/docker/ark/config</HostDir>
+      <ContainerDir>/ark</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>50000</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>50000</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>ark</Value>
+      <Name>ark</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>120</Value>
+      <Name/>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>60</Value>
+      <Name>AUTOBACKUP</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>30</Value>
+      <Name>WARNMINUTE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>arkadmin</Value>
+      <Name>ADMINPASSWORD</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Config Name="User ID" Target="PUID" Default="99" Mode="" Description="Set to Desired User ID" Type="Variable" Display="always" Required="true" Mask="false">50000</Config>
+  <Config Name="Group ID" Target="PGID" Default="100" Mode="" Description="Set to Desired Group ID" Type="Variable" Display="always" Required="true" Mask="false">50000</Config>
+  <Config Name="Host Path 1" Target="/ark" Default="/mnt/user/docker/ark/config" Mode="rw" Description="ARK Server Files &amp;amp; Configuration" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/docker/ark/config</Config>
+  <Config Name="SESSIONNAME" Target="ark" Default="ark" Mode="" Description="SESSIONNAME" Type="Variable" Display="always" Required="true" Mask="false">ark</Config>
+  <Config Name="AUTOUPDATE" Target="" Default="120" Mode="" Description="Auto Update Sys &amp;amp; Maps" Type="Variable" Display="advanced-hide" Required="true" Mask="false">120</Config>
+  <Config Name="AUTOBACKUP" Target="AUTOBACKUP" Default="60" Mode="" Description="Auto Backup of the Configuration" Type="Variable" Display="advanced-hide" Required="false" Mask="false">60</Config>
+  <Config Name="WARNMINUTE" Target="WARNMINUTE" Default="30" Mode="" Description="Warn Minutes before Update" Type="Variable" Display="advanced-hide" Required="false" Mask="false">30</Config>
+  <Config Name="ADMINPASSWORD" Target="ADMINPASSWORD" Default="arkadmin" Mode="" Description="ADMINPASSWORD" Type="Variable" Display="advanced-hide" Required="true" Mask="false">arkadmin</Config>
+</Container>
