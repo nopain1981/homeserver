@@ -18,7 +18,7 @@ RUN echo "force-unsafe-io" > /etc/dpkg/dpkg.cfg.d/02apt-speedup &&\
     curl http://shell.ninthgate.se/packages/shell.ninthgate.se.gpg.key | apt-key add - && \
 apt-get -q update && \
     rm /etc/apt/sources.list.d/plexmediaserver.list && \
-    curl https://downloads.plex.tv/plex-media-server/1.2.4.2949-4e494e4/plexmediaserver_1.2.4.2949-4e494e4_amd64.deb -o /tmp/plex.deb && \
+    curl https://downloads.plex.tv/plex-media-server/1.2.5.2966-3f767e7/plexmediaserver_1.2.5.2966-3f767e7_amd64.deb -o /tmp/plex.deb && \
    apt-get -qy install avahi-daemon avahi-utils && \
     dpkg -i /tmp/plex.deb && \
     apt-get -y autoremove && \
