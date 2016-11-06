@@ -5,15 +5,8 @@
   <Registry>https://registry.hub.docker.com/u/nopain1981/plexbeta/</Registry>
   <Network>host</Network>
   <Privileged>false</Privileged>
-  <Support>http://lime-technology.com/forum/index.php?topic=37671.0</Support>
   <Overview>&#xD;
-		This is a template with pass through of all your DVB Tuners.[br]&#xD;
-		Tvheadend is a TV streaming server. It's possible to pass through a DVB adapter. Instructions on how to do that is in the support thread. It is compiled with support for HDHomerun.[br]&#xD;
-		http://tvheadend.org[br]&#xD;
-		[b][span style='color: #E80000;']Directions:[/span][/b][br]&#xD;
-		[b]/config[/b] : This is where Tvheadend will store it's databases and configuration.[br][br]&#xD;
-		[b]/recordings[/b] : This is where Tvheadend will store it's recordings. You will have to edit the path in the configuration tab to /recordings or else the volume mapping will not work.[br][br]&#xD;
-		[b]/data[/b] : This is where the tv_grab_wg script will look for the guide.xml. This is only for use with WebGrab+Plus. Ignore if you do not use WebGrab+Plus for EPG data.[br][br]&#xD;
+plex betachannel
   </Overview>
   <Category>MediaServer:Video</Category>
   <WebUI>http://[IP]:[PORT:32400]/web</WebUI>
@@ -22,13 +15,7 @@
   <ExtraParams/>
   <DateInstalled>1477228315</DateInstalled>
   <Description>&#xD;
-		This is a template with pass through of all your DVB Tuners.[br]&#xD;
-		Tvheadend is a TV streaming server. It's possible to pass through a DVB adapter. Instructions on how to do that is in the support thread. It is compiled with support for HDHomerun.[br]&#xD;
-		http://tvheadend.org[br]&#xD;
-		[b][span style='color: #E80000;']Directions:[/span][/b][br]&#xD;
-		[b]/config[/b] : This is where Tvheadend will store it's databases and configuration.[br][br]&#xD;
-		[b]/recordings[/b] : This is where Tvheadend will store it's recordings. You will have to edit the path in the configuration tab to /recordings or else the volume mapping will not work.[br][br]&#xD;
-		[b]/data[/b] : This is where the tv_grab_wg script will look for the guide.xml. This is only for use with WebGrab+Plus. Ignore if you do not use WebGrab+Plus for EPG data.[br][br]&#xD;
+plex betachannel
   </Description>
   <Networking>
     <Mode>host</Mode>
@@ -52,7 +39,6 @@
     </Volume>
   </Data>
   <Environment/>
-  <Config Name="Host Path 1" Target="/data" Default="/mnt/user/docker/plexbeta/data/" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/docker/plexbeta/data</Config>
-  <Config Name="Host Path 3" Target="/recordings" Default="/mnt/user/docker/plexbeta/Recordings/" Mode="rw" Description="Container Path: /recordings" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/docker/plexbeta/recording</Config>
-  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/docker/plexbeta/config" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/docker/plexbeta/config</Config>
+  <Config Name="Host Path 1" Target="/data" Default="/mnt/user/docker/plex/data/" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/docker/plex/data</Config>
+  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/docker/plex/config" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/docker/plex/config</Config>
 </Container>

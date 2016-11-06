@@ -41,6 +41,5 @@
   </Data>
   <Environment/>
   <Config Name="Host Path 1" Target="/data" Default="/mnt/user/docker/plex/data/" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/docker/plex/data</Config>
-  <Config Name="Host Path 3" Target="/recordings" Default="/mnt/user/docker/plex/Recordings/" Mode="rw" Description="Container Path: /recordings" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/docker/plex/recording</Config>
   <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/docker/plex/config" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/docker/plex/config</Config>
 </Container>
