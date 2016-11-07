@@ -17,7 +17,7 @@
 #fi
 docker ps -a | awk {'print $1'} | xargs docker kill
 docker ps -a | awk {'print $1'} | xargs docker rm
-docker images | awk {'print $3'} | xargs docker rmi -f
+#docker images | awk {'print $3'} | xargs docker rmi -f
 
 CCSH=/playground/homeserver/INSTALL/compile.and.create.sh
 

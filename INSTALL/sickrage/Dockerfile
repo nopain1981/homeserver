@@ -32,6 +32,8 @@ ENV \
     # - SR_REPO, SR_BRANCH: SickRage GitHub repository and related branch
     SR_REPO="https://github.com/cytec/SickRage.git" \
     SR_BRANCH="master" \
+#    SR_REPO="https://github.com/SiCKRAGETV/SiCKRAGE.git" \
+#    SR_BRANCH="develop" \
 
     # - SYNO_VOLUME: Snyology NAS volume main directory
     SYNO_VOLUME="/volume1"    
