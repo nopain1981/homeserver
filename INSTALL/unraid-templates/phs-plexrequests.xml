@@ -3,7 +3,7 @@
   <Name>phs.plexrequests</Name>
   <Repository>nopain1981/plexrequests</Repository>
   <Registry>https://registry.hub.docker.com/u/nopain1981/plexrequests</Registry>
-  <Network>bridge</Network>
+  <Network>host</Network>
   <Privileged>false</Privileged>
   <Support/>
   <Overview>UNRAID plex Requests</Overview>
@@ -12,14 +12,14 @@
   <TemplateURL/>
   <Icon/>
   <ExtraParams/>
-  <DateInstalled>1478879690</DateInstalled>
+  <DateInstalled>1478892299</DateInstalled>
   <Description>UNRAID plex Requests</Description>
   <Networking>
-    <Mode>bridge</Mode>
+    <Mode>host</Mode>
     <Publish>
       <Port>
-        <HostPort>8080</HostPort>
-        <ContainerPort>3000</ContainerPort>
+        <HostPort>34001</HostPort>
+        <ContainerPort>34001</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
     </Publish>
@@ -45,5 +45,5 @@
   <Config Name="Config" Target="/config" Default="/mnt/user/docker/plexrequest/config" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/docker/plexrequest/config</Config>
   <Config Name="Data" Target="/data" Default="/mnt/user/docker/plexrequest/data" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/docker/plexrequest/data</Config>
   <Config Name="Tmp" Target="/tmp" Default="/mnt/user/docker/plexrequest/rmp" Mode="rw" Description="Container Path: /tmp" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/docker/plexrequest/tmp</Config>
-  <Config Name="PLexRequest Gui" Target="3000" Default="32401" Mode="tcp" Description="Container Port: 3000" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
+  <Config Name="PLexRequest Gui" Target="34001" Default="32401" Mode="tcp" Description="Container Port: 3000" Type="Port" Display="always" Required="true" Mask="false">34001</Config>
 </Container>
