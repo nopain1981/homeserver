@@ -2,6 +2,14 @@ FROM ubuntu:16.04
 MAINTAINER Tim Haak <tim@haak.co> 
 ENV DEBIAN_FRONTEND="noninteractive" \ 
 TERM="xterm" 
+# package version
+ENV PLEX_INSTALL="https://plex.tv/downloads/latest/1?channel=8&build=linux-ubuntu-x86_64&distro=ubuntu"
+
+# global environment settings
+ENV DEBIAN_FRONTEND="noninteractive"
+ENV HOME="/config"
+ENV PLEX_DOWNLOAD="https://downloads.plex.tv/plex-media-server"
+
 RUN echo "force-unsafe-io" > /etc/dpkg/dpkg.cfg.d/02apt-speedup &&\
     echo "Acquire::http {No-Cache=True;};" > /etc/apt/apt.conf.d/no-cache && \
     apt-get -q update && \
@@ -14,13 +22,13 @@ RUN echo "force-unsafe-io" > /etc/dpkg/dpkg.cfg.d/02apt-speedup &&\
       curl \
       sudo \
     && \
-    echo "deb http://shell.ninthgate.se/packages/debian plexpass main" > /etc/apt/sources.list.d/plexmediaserver.list && \
-    curl http://shell.ninthgate.se/packages/shell.ninthgate.se.gpg.key | apt-key add - && \
 apt-get -q update && \
-    rm /etc/apt/sources.list.d/plexmediaserver.list && \
-    curl https://downloads.plex.tv/plex-media-server/1.2.7.2987-1bef33a/plexmediaserver_1.2.7.2987-1bef33a_amd64.deb -o /tmp/plex.deb && \
    apt-get -qy install avahi-daemon avahi-utils && \
-    dpkg -i /tmp/plex.deb && \
+# install plex
+ curl -o \
+	/tmp/plexmediaserver.deb -L \
+	"${PLEX_INSTALL}" && \
+ dpkg -i /tmp/plexmediaserver.deb && \
     apt-get -y autoremove && \
     apt-get -y clean && \
     rm -rf /var/lib/apt/lists/* && \
